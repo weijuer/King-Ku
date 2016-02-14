@@ -1,0 +1,386 @@
+[ 2016-01-16T11:25:26+08:00 ] 127.0.0.1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002532s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000919s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002609s ]
+
+[ 2016-01-16T11:25:26+08:00 ] 127.0.0.1 /admin.php/Index/index_v1.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001916s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000383s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000822s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055373s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003077s ]
+
+[ 2016-01-16T11:25:27+08:00 ] 127.0.0.1 /admin.php/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000907s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007853s ]
+
+[ 2016-01-16T11:25:39+08:00 ] 127.0.0.1 /admin.php/Login/loginCheck
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002139s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0606s ]
+SQL: SELECT * FROM `weijuer_musers` WHERE `username` = 'admin' AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1   [ RunTime:0.0294s ]
+SQL: UPDATE `weijuer_musers` SET `loginnum`=loginnum+1 WHERE `userid` = 1 [ RunTime:0.0302s ]
+SQL: UPDATE `weijuer_musers` SET `lastip`='127.0.0.1',`lastdate`='1452914739' WHERE `userid` = 1 [ RunTime:0.0009s ]
+
+[ 2016-01-16T11:25:41+08:00 ] 127.0.0.1 /admin.php/Index/index.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000868s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001795s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003651s ]
+
+[ 2016-01-16T11:25:42+08:00 ] 127.0.0.1 /admin.php/Index/index_v1.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002279s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000375s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000833s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002807s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003548s ]
+
+[ 2016-01-16T11:25:45+08:00 ] 127.0.0.1 /admin.php/Video/videoAdmin.shtml?v=1.0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001845s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000558s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001003s ]
+NOTIC: [8] Undefined variable: vid E:\Web\thinkphp\Application\Runtime\Cache\Admin\93683789c13223e94c7286388928d284.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002239s ]
+
+[ 2016-01-16T11:25:46+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.4335502400062978&order=asc&limit=5&offset=0&_=1452914745919
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002400s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0013s ]
+
+[ 2016-01-16T11:25:51+08:00 ] 127.0.0.1 /admin.php/Video/videoEdit/vid/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002507s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `weijuer_videos` WHERE `vid` = 1 LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000501s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001426s ]
+NOTIC: [8] Undefined index: video_imgs E:\Web\thinkphp\Application\Runtime\Cache\Admin\e5be73d08fc9b7bfab5fee863e600579.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.119307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002368s ]
+
+[ 2016-01-16T11:26:12+08:00 ] 127.0.0.1 /admin.php/Video/posterUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002319s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Web\thinkphp\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0098s ]
+SQL: UPDATE `weijuer_videos` SET `poster`='20160116110112.jpg' WHERE `vid` = 1 [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003244s ]
+
+[ 2016-01-16T11:26:20+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.7295378902927041&order=asc&limit=5&offset=0&_=1452914780685
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003015s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0012s ]
+
+[ 2016-01-16T11:26:26+08:00 ] 127.0.0.1 /admin.php/Video/videoEdit/vid/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002258s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `weijuer_videos` WHERE `vid` = 2 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000496s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000911s ]
+NOTIC: [8] Undefined index: video_imgs E:\Web\thinkphp\Application\Runtime\Cache\Admin\e5be73d08fc9b7bfab5fee863e600579.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069475s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002250s ]
+
+[ 2016-01-16T11:26:42+08:00 ] 127.0.0.1 /admin.php/Video/posterUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002387s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Web\thinkphp\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0092s ]
+SQL: UPDATE `weijuer_videos` SET `poster`='20160116110142.jpg' WHERE `vid` = 2 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003335s ]
+
+[ 2016-01-16T11:26:45+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.41889262292534113&order=asc&limit=5&offset=0&_=1452914805119
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002830s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0012s ]
+
+[ 2016-01-16T11:26:48+08:00 ] 127.0.0.1 /admin.php/Video/videoEdit/vid/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003183s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `weijuer_videos` WHERE `vid` = 3 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000660s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001108s ]
+NOTIC: [8] Undefined index: video_imgs E:\Web\thinkphp\Application\Runtime\Cache\Admin\e5be73d08fc9b7bfab5fee863e600579.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076451s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002825s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004098s ]
+
+[ 2016-01-16T11:26:56+08:00 ] 127.0.0.1 /admin.php/Video/posterUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002303s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Web\thinkphp\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0095s ]
+SQL: UPDATE `weijuer_videos` SET `poster`='20160116110156.jpg' WHERE `vid` = 3 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003235s ]
+
+[ 2016-01-16T11:26:59+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.9448774680495262&order=asc&limit=5&offset=0&_=1452914819759
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003792s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0011s ]
+
+[ 2016-01-16T12:59:12+08:00 ] 127.0.0.1 /admin.php/Video/videoAdd.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004578s ]
+
+[ 2016-01-16T13:02:00+08:00 ] 127.0.0.1 /admin.php/Video/videoAddCheck
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001750s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007912s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0116s ]
+NOTIC: [8] Undefined offset: 0 E:\Web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 792 行.
+SQL: INSERT INTO `weijuer_videos` (`videoname`,`size`,`is_seeded`,`kind`,`is_hd`,`lang`,`region`,`age`,`director`,`casts`,`plot`,`user`,`link`,`regdate`,`regip`) VALUES ('同班同学','815M','0','JQ','HD','GD','GT ','2015','陆以心 ','邵音音，郭議芯，麥芷誼，廖子妤 ','《同班同学》讲三位问题少女无心读书，离开家庭之后一齐住，为生活要去做援交少女，后来她们竟然同时喜欢了同一个男人。','朕','暂无','1452920519','127.0.0.1') [ RunTime:0.1691s ]
+
+[ 2016-01-16T13:02:11+08:00 ] 127.0.0.1 /admin.php/Video/posterUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002451s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Web\thinkphp\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0101s ]
+SQL: UPDATE `weijuer_videos` SET `poster`='20160116130111.jpg' WHERE `vid` = 3 [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003953s ]
+
+[ 2016-01-16T13:02:13+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.5250412323512137&order=asc&limit=5&offset=0&_=1452920533024
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002967s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0012s ]
+
+[ 2016-01-16T13:02:22+08:00 ] 127.0.0.1 /admin.php/Video/videoEdit/vid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000087s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002676s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `weijuer_videos` WHERE `vid` = 4 LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000606s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001045s ]
+NOTIC: [8] Undefined index: video_imgs E:\Web\thinkphp\Application\Runtime\Cache\Admin\e5be73d08fc9b7bfab5fee863e600579.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003500s ]
+
+[ 2016-01-16T13:02:35+08:00 ] 127.0.0.1 /admin.php/Video/posterUpload
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002014s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002869s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\Web\thinkphp\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0099s ]
+SQL: UPDATE `weijuer_videos` SET `poster`='20160116130135.jpg' WHERE `vid` = 4 [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003322s ]
+
+[ 2016-01-16T13:02:37+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.4721109161619097&order=asc&limit=5&offset=0&_=1452920557378
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002625s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0012s ]
+

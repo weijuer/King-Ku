@@ -1,0 +1,288 @@
+			<!--右侧主体内容开始-->
+			<div class="content-body">
+				<!--头部信息展示开始-->
+				<div class="sub-header">
+					<span class="icon-big icon-gear"></span>
+					<h4 class="menu-title-active">当前位置/首页</h4>
+				</div>
+				<!--头部信息展示结束-->
+				
+				<!--右侧操作窗体开始 -->
+				<div class="sub-body">
+					<!--搜索栏开始-->
+					<div class="search-main">
+						<form id="findVideos" action="" method="post" >
+							<!--上行搜索栏-->
+							<ul class="search-top">
+								<li class="search-item-left">
+									<label for="videoName">资源名称：</label>
+									<input type="text" id="videoName" name="videoName" value=""/>
+								</li>
+								
+								<li class="search-item">
+									<label for="sportType">资源类型：</label>
+									<select name="sportNames" class="select-group-item">
+											<option value="">--请选择--</option>
+											<option value="喜剧片">喜剧片</option>
+											<option value="剧情片">剧情片</option>
+											<option value="动作片">动作片</option>
+											<option value="恐怖片">恐怖片</option>
+											<option value="爱情片">爱情片</option>
+											<option value="科幻片">科幻片</option>
+											<option value="伦理片">伦理片</option>
+									 </select>
+								</li>
+								
+								<li class="search-item-right">
+									<label for="isBookable">是否有种：</label>
+									<select name="subscribe" class="select-group-item">
+										<option value="">--请选择--</option>
+											<option value="1" >是</option>
+											<option value="0" >否</option>
+									</select>
+								</li>
+							</ul>
+							<!--上行搜索栏结束-->
+							
+							<!--下行搜索栏-->
+							<ul class="search-down">						
+								<li>
+									<label for="webvisible">是否高清：</label>
+									<select name="signingHaoBai" class="select-group-item">
+										<option value="">--请选择--</option>
+											<option value="1" >是</option>
+											<option value="0">否</option>
+									</select>
+								</li>
+								<li class="search-item-left">
+									<label for="webvisible">发布时间：</label>
+									<select name="isDisplay" class="select-group-item select-group-down-item">
+											<option value="">---请选择---</option>
+											<option value="0">升序</option>
+											<option value="1" >降序</option>
+									</select>
+								</li>
+								
+								<li>
+									<label for="isGroupBuy">可否下载：</label>
+									<select name="groupBuy" class="select-group-top-item">
+										<option value="">---请选择---</option>
+											<option value="1" >是</option>
+											<option value="0">否</option>
+									</select>
+								</li>
+								
+								<!--查询按钮开始 -->
+								<li>
+									<button class="search-btn" onclick="findVenuesList(1);" type="button"> 
+										<i class="icon-fangda"></i>
+										查询
+									</button>
+								</li>
+								<!--查询按钮结束 -->
+								
+								<!--分页操作开始 -->
+								<li style="display:none">
+									<input type="text" id="curPage" name="curPage" value="${curPage }"/>
+									<input type="text" id="allPage" name="allPage" value="${allPage }"/> 
+								</li>
+								<!--分页操作结束 -->
+								
+							</ul>
+							<!--下行搜索栏结束-->
+							
+						</form>
+						<!--表单提交结束-->
+						
+					</div>
+					<!--搜索栏结束-->
+
+					<!--中部操作栏开始-->
+					<div class="edit-bar">
+					<!--导入表格表单开始-->
+					<form action="" method="post" enctype="multipart/form-data">
+					
+						<div class="edit-bar-body">
+							<div class="edit-bar-left">
+								公告：最近发现...
+							</div>
+							
+							<div class="edit-bar-right">
+
+							</div>
+						</div>
+					</form>
+					<!--导入表格表单结束-->
+					</div>
+					<!--中部操作栏结束-->
+					
+					<!--表格开始-->
+					<div class="table-main">
+						
+						<!--表格主体开始-->
+						<div class="table-body">
+							
+							<table id="movieTable"></table>
+		
+						</div>
+						<!--表格主体部分结束-->						
+						
+					</div>
+					<!--表格结束-->
+					
+				</div>	
+				<!--右侧操作窗体结束-->
+				
+			</div>
+			<!--右侧主体内容结束-->
+			
+			<script>
+				$(function() {					
+					
+					// 行样式设置
+					function rowStyle(row, index) {
+						var classes = ['active', 'success', 'info', 'warning', 'danger'];
+
+						if (row.reply ==null) {
+							return {
+								classes: 'warning'
+							};
+						}
+						return {};
+					}
+					
+					
+					// (new Date()).Format("yyyy-MM-dd hh:mm:ss.S") ==> 2006-07-02 08:09:04.423 
+					// (new Date()).Format("yyyy-M-d h:m:s.S")      ==> 2006-7-2 8:9:4.18 
+					Date.prototype.Format = function (fmt) { //author: meizz 
+						var o = {
+							"M+": this.getMonth() + 1, //月份 
+							"d+": this.getDate(), //日 
+							"H+": this.getHours(), //小时 
+							"m+": this.getMinutes(), //分 
+							"s+": this.getSeconds(), //秒 
+							"q+": Math.floor((this.getMonth() + 3) / 3), //季度 
+							"S": this.getMilliseconds() //毫秒 
+						};
+						if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+						for (var k in o)
+						if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+						return fmt;
+					}
+					
+					// 时间格式化
+					function dateFormatter(value, row, index) {
+						console.log(row.regdate);
+						if(row.regdate!=0){
+							var date = new Date();
+							return date.Format("yyyy-MM-dd HH:mm:ss");						
+						}
+					}
+					
+					// 链接格式化
+					function linkFormatter(value, row, index) {
+						console.log(row.moviename);
+						var html = '<a class="movie-link" href="__URL__/movieSingle/'+row.mid+'"><i class="fa fa-thumbs-o-up"></i>'+row.moviename+'</a>'
+							return html;						
+					}
+					
+					// 表格数据加载
+					var $table = $('#movieTable'),
+						$remove = $('#remove'),
+						selections = [];
+					var queryUrl = '__URL__/movieList' + '?rnd=' + +Math.random(); // 请求URL	
+					
+					// 表格初始化 
+					$table.bootstrapTable({
+						//height: getHeight(),
+						method:'get',
+						url: queryUrl,
+						cache:false,
+						//height:300,
+						// toolbar:'#toolbar',
+						striped:true,
+						pagination:true,
+						//sidePagination:'client',
+						// pageNumber:1, //默认显示第几页数据
+						pageSize:5,
+						pageList:[10,20,30],
+						search:true,
+						// showColumns:true,
+						// showToggle:true,
+						showRefresh:true,
+						minimumCountColumns: 2,
+						rowStyle:rowStyle, // 行样式
+						// clickToSelect: true,
+						columns: [{
+							field: 'mid',
+							title: '序号',
+							sortable: true
+						},{
+							field: 'kind',
+							title: '分类',
+							align: 'center',
+							valign: 'middle'
+						},{
+							field: 'regdate',
+							title: '发布时间',
+							align: 'center',
+							valign: 'middle',
+							sortable: true
+						}, {
+							field: 'moviename',
+							title: '资源名称',
+							align: 'center',
+							valign: 'middle',
+							formatter: linkFormatter
+						}, {
+							field: 'size',
+							title: '资源大小',
+							align: 'center',
+							valign: 'middle'
+						}, {
+							field: 'is_seeded',
+							title: '是否种子',
+							align: 'center',
+							valign: 'middle',
+							formatter: dateFormatter
+						}, {
+							field: 'is_hd',
+							title: '是否高清',
+							align: 'center',
+							valign: 'middle'
+						}, {
+							field: 'downloadnum',
+							title: '下载次数',
+							align: 'center',
+							valign: 'middle'
+						}, {
+							field: 'user',
+							title: '发布者',
+							align: 'center',
+							valign: 'middle'
+						}, {
+							field: 'lastdate',
+							title: '更新时间',
+							align: 'center',
+							valign: 'middle'
+						}]	
+					});
+
+					
+					//传递的参数
+					function queryParams(params) {					 
+						return {					 
+							pageSize: params.pageSize,					 
+							pageIndex: params.pageNumber,					 
+							UserName: $("#txtName").val(),					 
+							Birthday: $("#txtBirthday").val(),					 
+							Gender: $("#Gender").val(),					 
+							Address: $("#txtAddress").val(),					 
+							name: params.sortName,					 
+							order: params.sortOrder					 
+						};					 
+					}
+					
+				});
+
+			</script>

@@ -1,0 +1,149 @@
+[ 2016-02-01T12:56:05+08:00 ] 127.0.0.1 /admin.php/Login/register
+ERR: 模板不存在:./Application/Admin/View/Layout/layout2.html
+
+[ 2016-02-01T13:09:41+08:00 ] 127.0.0.1 /admin.php/Login/checkRegister
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0020s ]
+SQL: INSERT INTO `weijuer_musers` (`email`,`username`,`password`,`regdate`,`regip`) VALUES ('ch123@126.com','admin','6a7b1035c1e1886479fd8629b2ee7b3c','1454303381','127.0.0.1') [ RunTime:0.0780s ]
+
+[ 2016-02-01T13:10:13+08:00 ] 127.0.0.1 /admin.php/Login/loginCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `weijuer_musers` WHERE `username` = 'admin' AND `password` = '6a7b1035c1e1886479fd8629b2ee7b3c' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `weijuer_musers` SET `loginnum`=loginnum+1 WHERE `userid` = 1 [ RunTime:0.0380s ]
+SQL: UPDATE `weijuer_musers` SET `lastip`='127.0.0.1',`lastdate`='1454303412' WHERE `userid` = 1 [ RunTime:0.0010s ]
+
+[ 2016-02-01T13:10:18+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.8257831546943635&order=asc&limit=5&offset=0&_=1454303418747
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0000s ]
+
+[ 2016-02-01T13:11:48+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.8257831546943635&order=asc&limit=5&offset=0&_=1454303418748
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0010s ]
+
+[ 2016-02-01T13:21:22+08:00 ] 127.0.0.1 /admin.php/Index/muserRead?rnd=0.6256954798009247&order=asc&limit=5&offset=0&_=1454304081875
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `weijuer_musers`  [ RunTime:0.0010s ]
+
+[ 2016-02-01T13:22:08+08:00 ] 127.0.0.1 /admin.php/Index/addCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0030s ]
+SQL: INSERT INTO `weijuer_musers` (`username`,`email`,`password`,`regdate`,`regip`) VALUES ('test','test123@126.com','6a7b1035c1e1886479fd8629b2ee7b3c','1454304128','127.0.0.1') [ RunTime:0.0000s ]
+
+[ 2016-02-01T13:22:08+08:00 ] 127.0.0.1 /admin.php/Index/muserRead?rnd=0.9848549147136509&order=asc&limit=5&offset=0&_=1454304128056
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_musers`  [ RunTime:0.0000s ]
+
+[ 2016-02-01T13:23:29+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.7725727797951549&order=asc&limit=5&offset=0&_=1454304209248
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0000s ]
+
+[ 2016-02-01T13:25:26+08:00 ] 127.0.0.1 /admin.php/Login/loginCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weijuer_musers` WHERE `username` = 'admin' AND `password` = '6a7b1035c1e1886479fd8629b2ee7b3c' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `weijuer_musers` SET `loginnum`=loginnum+1 WHERE `userid` = 1 [ RunTime:0.0010s ]
+SQL: UPDATE `weijuer_musers` SET `lastip`='127.0.0.1',`lastdate`='1454304326' WHERE `userid` = 1 [ RunTime:0.0010s ]
+
+[ 2016-02-01T13:32:17+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.5349885001778603&order=asc&limit=5&offset=0&_=1454304737751
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0010s ]
+
+[ 2016-02-01T13:32:19+08:00 ] 127.0.0.1 /admin.php/Video/videoDetailsList?rnd=0.38055330188944936&order=asc&limit=5&offset=0&_=1454304739233
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0000s ]
+
+[ 2016-02-01T14:28:39+08:00 ] 127.0.0.1 /admin.php/Login/loginCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `weijuer_musers` WHERE `username` = 'admin' AND `password` = '10328e18206fdbf8fe6824fa029e6c71' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-02-01T14:28:40+08:00 ] 127.0.0.1 /admin.php/Login/loginCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_musers` WHERE `username` = 'admin' AND `password` = '10328e18206fdbf8fe6824fa029e6c71' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-02-01T14:28:48+08:00 ] 127.0.0.1 /admin.php/Login/loginCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `weijuer_musers` WHERE `username` = 'admin' AND `password` = '6a7b1035c1e1886479fd8629b2ee7b3c' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `weijuer_musers` SET `loginnum`=loginnum+1 WHERE `userid` = 1 [ RunTime:0.0010s ]
+SQL: UPDATE `weijuer_musers` SET `lastip`='127.0.0.1',`lastdate`='1454308128' WHERE `userid` = 1 [ RunTime:0.0010s ]
+
+[ 2016-02-01T14:29:00+08:00 ] 127.0.0.1 /admin.php/Index/muserRead?rnd=0.6194640675093979&order=asc&limit=5&offset=0&_=1454308139745
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `weijuer_musers`  [ RunTime:0.0010s ]
+
+[ 2016-02-01T14:29:04+08:00 ] 127.0.0.1 /admin.php/Index/muserRead?rnd=0.7942921717185527&order=asc&limit=5&offset=0&_=1454308144331
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_musers`  [ RunTime:0.0000s ]
+
+[ 2016-02-01T14:29:08+08:00 ] 127.0.0.1 /admin.php/Video/videoList?rnd=0.40156221273355186&order=asc&limit=5&offset=0&_=1454308148617
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_videos`  [ RunTime:0.0000s ]
+
+[ 2016-02-01T14:29:40+08:00 ] 127.0.0.1 /admin.php/Index/addCheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0030s ]
+SQL: INSERT INTO `weijuer_musers` (`username`,`email`,`password`,`regdate`,`regip`) VALUES ('demo','cha123@126.com','7ae44e20d1e6e851767189b0c57cac64','1454308180','127.0.0.1') [ RunTime:0.0000s ]
+
+[ 2016-02-01T14:29:40+08:00 ] 127.0.0.1 /admin.php/Index/muserRead?rnd=0.4149670978076756&order=asc&limit=5&offset=0&_=1454308180769
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weijuer_musers`  [ RunTime:0.0000s ]
+
+[ 2016-02-01T14:29:50+08:00 ] 127.0.0.1 /admin.php/Index/muserRead?rnd=0.39568397868424654&order=asc&limit=5&offset=0&_=1454308190831
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_musers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_musers`  [ RunTime:0.0010s ]
+

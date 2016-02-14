@@ -1,0 +1,2331 @@
+[ 2016-01-05T08:36:38+08:00 ] 192.168.1.100 /thinkphp/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:ThinkPHP
+
+[ 2016-01-05T08:36:52+08:00 ] 192.168.1.100 /thinkphp/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:ThinkPHP
+
+[ 2016-01-05T08:37:08+08:00 ] 192.168.1.100 /thinkphp/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:ThinkPHP
+
+[ 2016-01-05T08:37:46+08:00 ] 192.168.1.100 /thinkphp/mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:ThinkPHP
+
+[ 2016-01-05T08:38:36+08:00 ] 192.168.1.100 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T08:38:37+08:00 ] 192.168.1.100 /movieList?rnd=0.2767669341992587&order=asc&limit=5&offset=0&_=1451954316462
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0950s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0070s ]
+
+[ 2016-01-05T08:40:58+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T08:47:50+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T08:47:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T08:47:52+08:00 ] 127.0.0.1 /movieList?rnd=0.04820300894789398&order=asc&limit=5&offset=0&_=1451954872034
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0120s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T08:47:52+08:00 ] 127.0.0.1 /Public/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T08:47:58+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: p I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: limit I:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T08:48:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T08:48:00+08:00 ] 127.0.0.1 /movieList?rnd=0.5589741775766015&order=asc&limit=5&offset=0&_=1451954880833
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T08:48:01+08:00 ] 127.0.0.1 /Public/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T08:48:02+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: p I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: limit I:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T08:48:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T08:48:03+08:00 ] 127.0.0.1 /movieList?rnd=0.37945143575780094&order=asc&limit=5&offset=0&_=1451954883625
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T08:48:04+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: p I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: limit I:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-01-05T09:09:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-01-05T09:09:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:09:42+08:00 ] 127.0.0.1 /movieList?rnd=0.6245079953223467&order=asc&limit=5&offset=0&_=1451956181786
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:10:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:10:12+08:00 ] 127.0.0.1 /movieList?rnd=0.012766244588419795&order=asc&limit=5&offset=0&_=1451956205812
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:10:12+08:00 ] 127.0.0.1 /Public/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:10:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:10:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T09:10:26+08:00 ] 127.0.0.1 /movieList?rnd=0.5402572718448937&order=asc&limit=5&offset=0&_=1451956225702
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:10:29+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-01-05T09:10:29+08:00 ] 127.0.0.1 /movieList?rnd=0.9604912446811795&order=asc&limit=5&offset=0&_=1451956229633
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0020s ]
+
+[ 2016-01-05T09:10:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-01-05T09:10:32+08:00 ] 127.0.0.1 /movieList?rnd=0.8583009040448815&order=asc&limit=5&offset=0&_=1451956232242
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:10:33+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: p I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: limit I:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:10:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:10:36+08:00 ] 127.0.0.1 /movieList?rnd=0.659460597904399&order=asc&limit=5&offset=0&_=1451956235899
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0030s ]
+
+[ 2016-01-05T09:10:37+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0510s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: p I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: limit I:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T09:10:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-01-05T09:10:39+08:00 ] 127.0.0.1 /movieList?rnd=0.08271277672611177&order=asc&limit=5&offset=0&_=1451956239265
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:10:41+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: p I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: limit I:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:10:50+08:00 ] 127.0.0.1 /mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2016-01-05T09:10:51+08:00 ] 127.0.0.1 /movieList?rnd=0.8812155886553228&order=asc&limit=5&offset=0&_=1451956250744
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0140s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:10:53+08:00 ] 127.0.0.1 /mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:10:53+08:00 ] 127.0.0.1 /movieList?rnd=0.0015740059316158295&order=asc&limit=5&offset=0&_=1451956253389
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:10:54+08:00 ] 127.0.0.1 /mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:10:54+08:00 ] 127.0.0.1 /movieList?rnd=0.4736580152530223&order=asc&limit=5&offset=0&_=1451956254490
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T09:11:02+08:00 ] 127.0.0.1 /mobile.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:11:02+08:00 ] 127.0.0.1 /movieList?rnd=0.5872265207581222&order=asc&limit=5&offset=0&_=1451956262509
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:11:05+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T09:11:05+08:00 ] 127.0.0.1 /movieList?rnd=0.14797364501282573&order=asc&limit=5&offset=0&_=1451956265583
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:11:06+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: p I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: limit I:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:11:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T09:11:08+08:00 ] 127.0.0.1 /movieList?rnd=0.7306853611953557&order=asc&limit=5&offset=0&_=1451956268016
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T09:11:08+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: p I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: limit I:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:11:30+08:00 ] 127.0.0.1 /movieList?rnd=0.1521815254818648&order=asc&limit=5&offset=0&_=1451956290512
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0260s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:11:35+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-05T09:11:39+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-05T09:11:42+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: p I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 42 行.
+NOTIC: [8] Undefined index: limit I:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: map I:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T09:11:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:11:45+08:00 ] 127.0.0.1 /movieList?rnd=0.5548217440955341&order=asc&limit=5&offset=0&_=1451956304708
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:11:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:11:46+08:00 ] 127.0.0.1 /movieList?rnd=0.04235315229743719&order=asc&limit=5&offset=0&_=1451956306163
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0100s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T09:11:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:11:53+08:00 ] 127.0.0.1 /movieList?rnd=0.09885945310816169&order=asc&limit=5&offset=0&_=1451956308874
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:12:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-01-05T09:12:06+08:00 ] 127.0.0.1 /movieList?rnd=0.3800224873702973&order=asc&limit=5&offset=0&_=1451956321117
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0020s ]
+
+[ 2016-01-05T09:12:19+08:00 ] 127.0.0.1 /videoDetail/6.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weijuer_videos` WHERE `vid` = 6 LIMIT 1   [ RunTime:0.0460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: video I:\web\thinkphp\Application\Runtime\Cache\Home\c5b23d52d84967ce8bb434e88054c570.php 第 354 行.
+NOTIC: [8] Undefined variable: video I:\web\thinkphp\Application\Runtime\Cache\Home\c5b23d52d84967ce8bb434e88054c570.php 第 355 行.
+NOTIC: [8] Undefined variable: userid I:\web\thinkphp\Application\Runtime\Cache\Home\c5b23d52d84967ce8bb434e88054c570.php 第 418 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-01-05T09:12:24+08:00 ] 127.0.0.1 /movieList?rnd=0.8474651349242777&order=asc&limit=5&offset=0&_=1451956343749
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0090s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0020s ]
+
+[ 2016-01-05T09:13:37+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T09:13:38+08:00 ] 127.0.0.1 /movieList?rnd=0.6455437117256224&order=asc&limit=5&offset=0&_=1451956418028
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0140s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T09:13:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T09:13:53+08:00 ] 127.0.0.1 /movieList?rnd=0.03552457760088146&order=asc&limit=5&offset=0&_=1451956433815
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 123 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T09:36:18+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:17:55+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:26:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:26:30+08:00 ] 127.0.0.1 /movieList?rnd=0.1211762772873044&order=asc&limit=5&offset=0&_=1451960784888
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0080s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:26:30+08:00 ] 127.0.0.1 /Public/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:26:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:26:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:26:35+08:00 ] 127.0.0.1 /movieList?rnd=0.2473566618282348&order=asc&limit=5&offset=0&_=1451960795568
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0090s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:26:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2016-01-05T10:26:39+08:00 ] 127.0.0.1 /movieList?rnd=0.41326769976876676&order=asc&limit=5&offset=0&_=1451960799392
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:26:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:26:41+08:00 ] 127.0.0.1 /movieList?rnd=0.24186672712676227&order=asc&limit=5&offset=0&_=1451960801519
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:26:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-01-05T10:26:45+08:00 ] 127.0.0.1 /movieList?rnd=0.7113776903133839&order=asc&limit=5&offset=0&_=1451960805182
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:26:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-01-05T10:26:47+08:00 ] 127.0.0.1 /movieList?rnd=0.05606304761022329&order=asc&limit=5&offset=0&_=1451960807719
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:26:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:26:50+08:00 ] 127.0.0.1 /movieList?rnd=0.06458799843676388&order=asc&limit=5&offset=0&_=1451960810246
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0020s ]
+
+[ 2016-01-05T10:26:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:26:53+08:00 ] 127.0.0.1 /movieList?rnd=0.03850944503210485&order=asc&limit=5&offset=0&_=1451960813636
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0310s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0020s ]
+
+[ 2016-01-05T10:26:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:27:00+08:00 ] 127.0.0.1 /movieList?rnd=0.8619436596054584&order=asc&limit=5&offset=0&_=1451960819957
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0080s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:27:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:27:51+08:00 ] 127.0.0.1 /movieList?rnd=0.21135734603740275&order=asc&limit=5&offset=0&_=1451960871514
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T10:27:51+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-05T10:27:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:27:53+08:00 ] 127.0.0.1 /movieList?rnd=0.2683493581134826&order=asc&limit=5&offset=0&_=1451960873596
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:28:16+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:28:16+08:00 ] 127.0.0.1 /movieList?rnd=0.02520111412741244&order=asc&limit=5&offset=0&_=1451960896552
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0400s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:28:20+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:28:21+08:00 ] 127.0.0.1 /movieList?rnd=0.6973279307130724&order=asc&limit=5&offset=0&_=1451960900848
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:28:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:28:23+08:00 ] 127.0.0.1 /movieList?rnd=0.7481934034731239&order=asc&limit=5&offset=0&_=1451960903412
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0120s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T10:28:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:28:24+08:00 ] 127.0.0.1 /movieList?rnd=0.6134617389179766&order=asc&limit=5&offset=0&_=1451960904517
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T10:28:26+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:47:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:49:03+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-01-05T10:49:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:49:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:49:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:49:39+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:49:44+08:00 ] 127.0.0.1 /movieList?rnd=0.4199574200902134&order=asc&limit=5&offset=0&_=1451962179531
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0240s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:49:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:49:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-01-05T10:49:53+08:00 ] 127.0.0.1 /movieList?rnd=0.23109895060770214&order=asc&limit=5&offset=0&_=1451962188478
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T10:49:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:49:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:50:01+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:50:01+08:00 ] 127.0.0.1 /movieList?rnd=0.3118561948649585&order=asc&limit=5&offset=0&_=1451962201229
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:50:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:50:11+08:00 ] 127.0.0.1 /movieList?rnd=0.2069034008309245&order=asc&limit=5&offset=0&_=1451962211446
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0240s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0020s ]
+
+[ 2016-01-05T10:50:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2016-01-05T10:50:12+08:00 ] 127.0.0.1 /movieList?rnd=0.452690951526165&order=asc&limit=5&offset=0&_=1451962212531
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0020s ]
+
+[ 2016-01-05T10:50:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:50:25+08:00 ] 127.0.0.1 /movieList?rnd=0.46432834677398205&order=asc&limit=5&offset=0&_=1451962225090
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T10:50:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:50:27+08:00 ] 127.0.0.1 /movieList?rnd=0.2605582217220217&order=asc&limit=5&offset=0&_=1451962227124
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0310s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:50:37+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:50:43+08:00 ] 127.0.0.1 /movieList?rnd=0.6091084214858711&order=asc&limit=5&offset=0&_=1451962238114
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0050s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:50:43+08:00 ] 127.0.0.1 /Public/img/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:50:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-01-05T10:50:46+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:50:50+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-05T10:50:55+08:00 ] 127.0.0.1 /movieList?rnd=0.24315682263113558&order=asc&limit=5&offset=0&_=1451962250618
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0060s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-01-05T10:56:15+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-01-05T10:56:20+08:00 ] 127.0.0.1 /movieList?rnd=0.4373400383628905&order=asc&limit=5&offset=0&_=1451962575953
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:56:22+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:56:27+08:00 ] 127.0.0.1 /movieList?rnd=0.4440736828837544&order=asc&limit=5&offset=0&_=1451962582668
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0290s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T10:56:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T10:56:40+08:00 ] 127.0.0.1 /movieList?rnd=0.9051810668315738&order=asc&limit=5&offset=0&_=1451962595742
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T11:34:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T11:34:48+08:00 ] 127.0.0.1 /movieList?rnd=0.29862034576945007&order=asc&limit=5&offset=0&_=1451964888335
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0400s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in I:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 124 and defined I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where I:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-01-05T13:17:26+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-01-05T17:20:44+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+
+[ 2016-01-05T18:57:01+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+

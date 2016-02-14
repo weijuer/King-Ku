@@ -1,0 +1,85 @@
+					<div class="search-main">
+						<form id="findVideos" action="" method="post" >
+							<!--上行搜索栏-->
+							<ul class="search-top">
+								<li class="search-item-left">
+									<label for="videoName">资源名称：</label>
+									<input type="text" id="videoName" name="videoName" value=""/>
+								</li>
+								
+								<li class="search-item">
+									<label for="sportType">资源类型：</label>
+									<select name="sportNames" class="select-group-item">
+											<option value="">--请选择--</option>
+											<option value="喜剧片">喜剧片</option>
+											<option value="剧情片">剧情片</option>
+											<option value="动作片">动作片</option>
+											<option value="恐怖片">恐怖片</option>
+											<option value="爱情片">爱情片</option>
+											<option value="科幻片">科幻片</option>
+											<option value="伦理片">伦理片</option>
+									 </select>
+								</li>
+								
+								<li class="search-item-right">
+									<label for="isBookable">是否有种：</label>
+									<select name="subscribe" class="select-group-item">
+										<option value="">--请选择--</option>
+											<option value="1" >是</option>
+											<option value="0" >否</option>
+									</select>
+								</li>
+							</ul>
+							<!--上行搜索栏结束-->
+							
+							<!--下行搜索栏-->
+							<ul class="search-down">						
+								<li>
+									<label for="webvisible">是否高清：</label>
+									<select name="signingHaoBai" class="select-group-item">
+										<option value="">--请选择--</option>
+											<option value="1" >是</option>
+											<option value="0">否</option>
+									</select>
+								</li>
+								<li class="search-item-left">
+									<label for="webvisible">发布时间：</label>
+									<select name="isDisplay" class="select-group-item select-group-down-item">
+											<option value="">---请选择---</option>
+											<option value="0">升序</option>
+											<option value="1" >降序</option>
+									</select>
+								</li>
+								
+								<li>
+									<label for="isGroupBuy">可否下载：</label>
+									<select name="groupBuy" class="select-group-top-item">
+										<option value="">---请选择---</option>
+											<option value="1" >是</option>
+											<option value="0">否</option>
+									</select>
+								</li>
+								
+								<!--查询按钮开始 -->
+								<li>
+									<button class="search-btn" onclick="findVenuesList(1);" type="button"> 
+										<i class="icon-fangda"></i>
+										查询
+									</button>
+								</li>
+								<!--查询按钮结束 -->
+								
+								<!--分页操作开始 -->
+								<li style="display:none">
+									<input type="text" id="curPage" name="curPage" value="${curPage }"/>
+									<input type="text" id="allPage" name="allPage" value="${allPage }"/> 
+								</li>
+								<!--分页操作结束 -->
+								
+							</ul>
+							<!--下行搜索栏结束-->
+							
+						</form>
+						<!--表单提交结束-->
+						
+					</div>

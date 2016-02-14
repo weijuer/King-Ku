@@ -1,0 +1,58 @@
+	<!--Bootstrap JS引入-->
+	<script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__/js/contabs.min.js"></script>
+	<script src="__PUBLIC__/js/plugins/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- 本页JS引入 -->
+    <script src="__PUBLIC__/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="__PUBLIC__/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/layer/layer.min.js"></script>
+    <script src="__PUBLIC__/js/plugins/pace/pace.min.js"></script>
+    <script src="__PUBLIC__/js/hplus.min.js"></script>
+	<script src="__PUBLIC__/js/pages/public.js"></script>
+	
+	<script>
+		$(function(){
+			//判断用户是否登录，如果没有登录，则跳转到登录页面
+			// var user = {$Think.session.userid};
+			var user = $(".navbar-header-userid").val().trim();
+			if(isNull(user)){
+				window.location.href = "__APP__/Login/login";
+			}
+			
+			//退出登录
+			function logoutLogin(){
+				window.location.href = "__APP__/Login/login";
+			}
+			
+			// 子菜单设置
+			$(".sub-nav li > a").on("click",function(){
+				var self = $(this);
+				var others = $(".sub-nav li > a").not(self);
+				self.addClass("sub-current");
+				others.removeClass("sub-current");
+
+			});
+			
+			// 遍历子菜单，设置选中样式
+			//$(".sub-nav li > a >.nav-label").each(function(){
+				//var subMenu = $(this).text();
+				//var menu = $(".page-tabs-content a.active").text();
+				//if(menu.match(subMenu)!=null){
+				//	$(this).parents(".sub-nav").show();
+				//	$(this).parents("a").addClass("sub-current");
+					//$(this).parents(".sub-nav").prev().addClass("current");
+				//	return false;
+				//}else {
+				//	$(this).removeClass("sub-current");
+					//$(this).parents(".sub-nav").prev().removeClass("current");
+					// $(this).parents(".sub-menu").slideUp();
+				//}
+			//});
+			
+		});
+	</script>
+	
+</body>
+
+</html>

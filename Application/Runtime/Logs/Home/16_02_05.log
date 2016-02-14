@@ -1,0 +1,229 @@
+[ 2016-02-05T09:37:15+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-05T09:38:26+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' E:\web\thinkphp\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.559032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.560032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2016-02-05T09:38:26+08:00 ] 127.0.0.1 /movieList?rnd=0.312914906302467&order=asc&limit=5&offset=0&_=1454636306666
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0710s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 145 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-02-05T09:39:09+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map E:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: p E:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: limit E:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map E:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' E:\web\thinkphp\Application\Runtime\Cache\Home\9cd6cacc8f305b9c9eee49e909cb50b0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.188011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-05T09:39:20+08:00 ] 127.0.0.1 /videoDetail/1.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weijuer_videos` WHERE `vid` = 1 LIMIT 1   [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' E:\web\thinkphp\Application\Runtime\Cache\Home\c5b23d52d84967ce8bb434e88054c570.php 第 10 行.
+NOTIC: [8] Undefined variable: video E:\web\thinkphp\Application\Runtime\Cache\Home\c5b23d52d84967ce8bb434e88054c570.php 第 359 行.
+NOTIC: [8] Undefined variable: video E:\web\thinkphp\Application\Runtime\Cache\Home\c5b23d52d84967ce8bb434e88054c570.php 第 360 行.
+NOTIC: [8] Undefined variable: userid E:\web\thinkphp\Application\Runtime\Cache\Home\c5b23d52d84967ce8bb434e88054c570.php 第 423 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-02-05T09:39:29+08:00 ] 127.0.0.1 /videoDetail/%E6%9A%82%E6%97%A0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:VideoDetail
+
+[ 2016-02-05T09:39:43+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' E:\web\thinkphp\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-05T09:39:43+08:00 ] 127.0.0.1 /movieList?rnd=0.3937941121403128&order=asc&limit=5&offset=0&_=1454636383364
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 145 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-02-05T09:39:44+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map E:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: p E:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: limit E:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map E:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' E:\web\thinkphp\Application\Runtime\Cache\Home\9cd6cacc8f305b9c9eee49e909cb50b0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-05T09:39:48+08:00 ] 127.0.0.1 /videoList.shtml
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: map E:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: p E:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 64 行.
+NOTIC: [8] Undefined index: limit E:\web\thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php 第 950 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc LIMIT 0,20   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: map E:\web\thinkphp\Application\Home\Controller\IndexController.class.php 第 67 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `weijuer_videos` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' E:\web\thinkphp\Application\Runtime\Cache\Home\9cd6cacc8f305b9c9eee49e909cb50b0.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-05T09:39:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' E:\web\thinkphp\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-02-05T09:39:49+08:00 ] 127.0.0.1 /movieList?rnd=0.6770614439155906&order=asc&limit=5&offset=0&_=1454636389370
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 145 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+

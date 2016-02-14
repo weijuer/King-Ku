@@ -1,0 +1,181 @@
+			<!--右侧主体内容开始-->
+			<div class="content-body">
+				<!--头部信息展示开始-->
+				<div class="sub-header">
+					<span class="icon-big icon-gear"></span>
+					<h4 class="menu-title-active">当前位置/首页</h4>
+				</div>
+				<!--头部信息展示结束-->
+				
+				<!--右侧操作窗体开始 -->
+				<div class="sub-body">
+					<!--搜索栏开始-->
+					<div class="search-main">
+						<form id="findVideos" action="" method="post" >
+							<!--上行搜索栏-->
+							<ul class="search-top">
+								<li class="search-item-left">
+									<label for="videoName">资源名称：</label>
+									<input type="text" id="videoName" name="videoName" value=""/>
+								</li>
+								
+								<li class="search-item">
+									<label for="sportType">资源类型：</label>
+									<select name="sportNames" class="select-group-item">
+											<option value="">--请选择--</option>
+											<option value="喜剧片">喜剧片</option>
+											<option value="剧情片">剧情片</option>
+											<option value="动作片">动作片</option>
+											<option value="恐怖片">恐怖片</option>
+											<option value="爱情片">爱情片</option>
+											<option value="科幻片">科幻片</option>
+											<option value="伦理片">伦理片</option>
+									 </select>
+								</li>
+								
+								<li class="search-item-right">
+									<label for="isBookable">是否有种：</label>
+									<select name="subscribe" class="select-group-item">
+										<option value="">--请选择--</option>
+											<option value="1" >是</option>
+											<option value="0" >否</option>
+									</select>
+								</li>
+							</ul>
+							<!--上行搜索栏结束-->
+							
+							<!--下行搜索栏-->
+							<ul class="search-down">						
+								<li>
+									<label for="webvisible">是否高清：</label>
+									<select name="signingHaoBai" class="select-group-item">
+										<option value="">--请选择--</option>
+											<option value="1" >是</option>
+											<option value="0">否</option>
+									</select>
+								</li>
+								<li class="search-item-left">
+									<label for="webvisible">发布时间：</label>
+									<select name="isDisplay" class="select-group-item select-group-down-item">
+											<option value="">---请选择---</option>
+											<option value="0">升序</option>
+											<option value="1" >降序</option>
+									</select>
+								</li>
+								
+								<li>
+									<label for="isGroupBuy">可否下载：</label>
+									<select name="groupBuy" class="select-group-top-item">
+										<option value="">---请选择---</option>
+											<option value="1" >是</option>
+											<option value="0">否</option>
+									</select>
+								</li>
+								
+								<!--查询按钮开始 -->
+								<li>
+									<button class="search-btn" onclick="findVenuesList(1);" type="button"> 
+										<i class="icon-fangda"></i>
+										查询
+									</button>
+								</li>
+								<!--查询按钮结束 -->
+								
+								<!--分页操作开始 -->
+								<li style="display:none">
+									<input type="text" id="curPage" name="curPage" value="${curPage }"/>
+									<input type="text" id="allPage" name="allPage" value="${allPage }"/> 
+								</li>
+								<!--分页操作结束 -->
+								
+							</ul>
+							<!--下行搜索栏结束-->
+							
+						</form>
+						<!--表单提交结束-->
+						
+					</div>
+					<!--搜索栏结束-->
+
+					<!--中部操作栏开始-->
+					<div class="edit-bar">
+					<!--导入表格表单开始-->
+					<form action="" method="post" enctype="multipart/form-data">
+					
+						<div class="edit-bar-body">
+							<div class="edit-bar-left">
+								公告：最近发现...
+							</div>
+							
+							<div class="edit-bar-right">
+
+							</div>
+						</div>
+					</form>
+					<!--导入表格表单结束-->
+					</div>
+					<!--中部操作栏结束-->
+					
+					<!--表格开始-->
+					<div class="table-main">
+						
+						<!--表格主体开始-->
+						<div class="table-body">
+							
+							<div class="jqGrid_wrapper">
+								<table id="table_list_1"></table>
+								<div id="pager_list_1"></div>
+							</div>
+						
+						
+							<table id="tableBody" class="table table-hover sort-table">
+								<thead>
+									<tr>
+										<!--<th><input class="all-select" type="checkbox" name="all" />全选</th>-->
+										<th>序号</th>
+										<th>分类</th>
+										<th>发布时间</th>
+										<th>资源名称</th>	
+										<th>资源大小</th>
+										<th>是否种子</th>
+										<th>是否高清</th>
+										<th>下载次数</th>
+										<th>发布者</th>
+										<th>更新时间</th>								  
+									</tr>
+								</thead>
+								<tbody id="venuesContext">
+									<!-- 场馆数据由ajax加载至此处 -->
+								</tbody>
+							</table>
+						</div>
+						<!--表格主体部分结束-->
+						
+						<!--分页按钮-->
+						<div class="table-footer">
+							<ul class="table-footer-pager">
+								<li class="previous">
+									<a href="javascript:beforPage();">« 上一页</a>
+								</li>
+								<li><a id="cur_all_Page"><b>${curPage }/${allPage }</b></a></li>
+								<li class="next"><a href="javascript:nextPage();">下一页 »</a></li>
+								<li class="to-page">
+									到第
+									<input type="number" min="1" id="pageSize"/>
+									页
+								</li>
+								<li class="to-page">
+									<button type="button" class="page-btn" onclick="gotoPage();">确认</button>
+								</li>
+							</ul>
+						</div>
+						<!--分页按钮结束-->
+						
+					</div>
+					<!--表格结束-->
+					
+				</div>	
+				<!--右侧操作窗体结束-->
+				
+			</div>
+			<!--右侧主体内容结束-->

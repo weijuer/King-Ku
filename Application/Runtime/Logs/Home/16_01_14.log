@@ -1,0 +1,249 @@
+[ 2016-01-14T21:48:54+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000661s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001109s ]
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' E:\Web\thinkphp\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.179103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.179550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009570s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011279s ]
+
+[ 2016-01-14T21:48:56+08:00 ] 127.0.0.1 /movieList?rnd=0.48975403187796474&order=asc&limit=5&offset=0&_=1452779335528
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002420s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.1383s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\Web\thinkphp\Application\Home\Controller\IndexController.class.php on line 143 and defined E:\Web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\Web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\Web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\Web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0125s ]
+
+[ 2016-01-14T21:49:01+08:00 ] 127.0.0.1 /Public/css/style.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004695s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-14T21:49:01+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001780s ]
+
+[ 2016-01-14T21:49:01+08:00 ] 127.0.0.1 /Public/css/style.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002170s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-14T21:57:52+08:00 ] 127.0.0.1 /Public/css/style.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002446s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-14T22:04:14+08:00 ] 127.0.0.1 /Public/css/style.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002550s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-14T22:05:35+08:00 ] 127.0.0.1 /Public/css/style.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002164s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-14T22:05:37+08:00 ] 127.0.0.1 /Public/css/style.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002189s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-14T22:06:14+08:00 ] 127.0.0.1 /Public/css/style.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002187s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-01-14T22:16:07+08:00 ] 127.0.0.1 /Public/images/poster/20151122181148.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001831s ]
+
+[ 2016-01-14T22:16:07+08:00 ] 127.0.0.1 /Public/images/poster/20151209221217.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014819s ]
+
+[ 2016-01-14T22:16:07+08:00 ] 127.0.0.1 /Public/images/shotcuts/56519612af237.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000079s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009894s ]
+
+[ 2016-01-14T22:16:07+08:00 ] 127.0.0.1 /Public/images/shotcuts/56683523f1254.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008566s ]
+
+[ 2016-01-14T22:16:22+08:00 ] 127.0.0.1 /Public/images/shotcuts/56519612af237.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002494s ]
+
+[ 2016-01-14T22:16:22+08:00 ] 127.0.0.1 /Public/images/poster/20151209221217.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000110s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002483s ]
+
+[ 2016-01-14T22:16:22+08:00 ] 127.0.0.1 /Public/images/poster/20151122181148.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001617s ]
+
+[ 2016-01-14T22:16:22+08:00 ] 127.0.0.1 /Public/images/shotcuts/56683523f1254.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002044s ]
+
+[ 2016-01-14T22:16:24+08:00 ] 127.0.0.1 /Public/images/shotcuts/56683523f1254.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000083s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001295s ]
+
+[ 2016-01-14T22:16:24+08:00 ] 127.0.0.1 /Public/images/poster/20151122181148.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+
+[ 2016-01-14T22:16:24+08:00 ] 127.0.0.1 /Public/images/poster/20151209221217.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+
+[ 2016-01-14T22:16:24+08:00 ] 127.0.0.1 /Public/images/shotcuts/56519612af237.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001443s ]
+
+[ 2016-01-14T22:19:00+08:00 ] 127.0.0.1 /Public/images/poster/20151122181148.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001611s ]
+
+[ 2016-01-14T22:19:00+08:00 ] 127.0.0.1 /Public/images/shotcuts/56683523f1254.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001862s ]
+
+[ 2016-01-14T22:19:00+08:00 ] 127.0.0.1 /Public/images/shotcuts/56519612af237.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001976s ]
+
+[ 2016-01-14T22:19:00+08:00 ] 127.0.0.1 /Public/images/poster/20151209221217.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001901s ]
+
+[ 2016-01-14T22:20:34+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001982s ]
+
+[ 2016-01-14T22:20:36+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002614s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000537s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000884s ]
+NOTIC: [8] Use of undefined constant SITE_URL - assumed 'SITE_URL' E:\Web\thinkphp\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 10 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002477s ]
+
+[ 2016-01-14T22:21:54+08:00 ] 127.0.0.1 /Public/images/poster/20151122181148.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001649s ]
+
+[ 2016-01-14T22:21:54+08:00 ] 127.0.0.1 /Public/images/shotcuts/56519612af237.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002552s ]
+
+[ 2016-01-14T22:21:54+08:00 ] 127.0.0.1 /Public/images/poster/20151209221217.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001703s ]
+
+[ 2016-01-14T22:21:54+08:00 ] 127.0.0.1 /Public/images/shotcuts/56683523f1254.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001788s ]
+
+[ 2016-01-14T22:25:57+08:00 ] 127.0.0.1 /Public/images/shotcuts/56519612af237.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001608s ]
+
+[ 2016-01-14T22:25:57+08:00 ] 127.0.0.1 /Public/images/poster/20151122181148.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000131s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001764s ]
+
+[ 2016-01-14T22:25:57+08:00 ] 127.0.0.1 /Public/images/poster/20151209221217.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001706s ]
+
+[ 2016-01-14T22:25:57+08:00 ] 127.0.0.1 /Public/images/shotcuts/56683523f1254.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001699s ]
+

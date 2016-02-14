@@ -1,0 +1,142 @@
+[ 2016-02-01T11:02:23+08:00 ] 127.0.0.1 /movieList?rnd=0.05926448944956064&order=asc&limit=5&offset=0&_=1454295743166
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 143 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-02-01T11:02:26+08:00 ] 127.0.0.1 /movieList?rnd=0.7841529832221568&order=asc&limit=5&offset=0&_=1454295746301
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 143 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-02-01T11:02:31+08:00 ] 127.0.0.1 /movieList?rnd=0.43195824697613716&order=asc&limit=5&offset=0&_=1454295751340
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 143 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+
+[ 2016-02-01T11:02:43+08:00 ] 127.0.0.1 /movieList?rnd=0.588014907669276&order=asc&limit=5&offset=0&_=1454295763524
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 143 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-02-01T11:59:49+08:00 ] 127.0.0.1 /movieList?rnd=0.9933584595564753&order=asc&limit=5&offset=0&_=1454299188985
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0110s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 143 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-02-01T12:47:49+08:00 ] 127.0.0.1 /Public/css/style.min.css
+ERR: 无法加载控制器:Public
+
+[ 2016-02-01T12:56:32+08:00 ] 127.0.0.1 /Public/css/style.min.css
+ERR: 无法加载控制器:Public
+
+[ 2016-02-01T13:32:20+08:00 ] 127.0.0.1 /Public/css/style.min.css
+ERR: 无法加载控制器:Public
+
+[ 2016-02-01T13:41:12+08:00 ] 127.0.0.1 /movieList?rnd=0.31787634966894984&order=asc&limit=5&offset=0&_=1454305271893
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0060s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 143 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-02-01T13:54:55+08:00 ] 127.0.0.1 /videoListsss.shtml
+ERR: 无法加载控制器:VideoListsss
+
+[ 2016-02-01T13:55:13+08:00 ] 127.0.0.1 /videoListsss.shtml
+ERR: 无法加载控制器:VideoListsss
+
+[ 2016-02-01T13:55:14+08:00 ] 127.0.0.1 /videoListsss.shtml
+ERR: 无法加载控制器:VideoListsss
+
+[ 2016-02-01T13:55:14+08:00 ] 127.0.0.1 /videoListsss.shtml
+ERR: 无法加载控制器:VideoListsss
+
+[ 2016-02-01T14:09:20+08:00 ] 127.0.0.1 /static/404.shtml
+ERR: 无法加载控制器:Static
+
+[ 2016-02-01T14:09:23+08:00 ] 127.0.0.1 /static/404.shtml
+ERR: 无法加载控制器:Static
+
+[ 2016-02-01T14:10:02+08:00 ] 127.0.0.1 /static/404.shtml
+ERR: 无法加载控制器:Static
+
+[ 2016-02-01T14:10:03+08:00 ] 127.0.0.1 /static/404.shtml
+ERR: 无法加载控制器:Static
+
+[ 2016-02-01T14:10:03+08:00 ] 127.0.0.1 /static/404.shtml
+ERR: 无法加载控制器:Static
+
+[ 2016-02-01T14:10:03+08:00 ] 127.0.0.1 /static/404.shtml
+ERR: 无法加载控制器:Static
+
+[ 2016-02-01T14:10:07+08:00 ] 127.0.0.1 /static/404.shtml
+ERR: 无法加载控制器:Static
+
+[ 2016-02-01T14:10:08+08:00 ] 127.0.0.1 /static/404.shtml
+ERR: 无法加载控制器:Static
+
+[ 2016-02-01T14:10:15+08:00 ] 127.0.0.1 /404.shtml
+ERR: 无法加载控制器:404
+
+[ 2016-02-01T14:10:19+08:00 ] 127.0.0.1 /static/404.shtml
+ERR: 无法加载控制器:Static
+
+[ 2016-02-01T14:10:23+08:00 ] 127.0.0.1 /Public/static/404.shtml
+ERR: 无法加载控制器:Public
+
+[ 2016-02-01T14:28:08+08:00 ] 127.0.0.1 /movieList?rnd=0.01525028352625668&order=asc&limit=5&offset=0&_=1454308088467
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0040s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 145 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0010s ]
+
+[ 2016-02-01T14:28:15+08:00 ] 127.0.0.1 /movieList?rnd=0.8429639239329845&order=asc&limit=5&offset=0&_=1454308095238
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weijuer_videos` [ RunTime:0.0030s ]
+NOTIC: [2] Missing argument 1 for Think\Model::where(), called in E:\web\thinkphp\Application\Home\Controller\IndexController.class.php on line 145 and defined E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1777 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1785 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: where E:\web\thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1796 行.
+SQL: SELECT * FROM `weijuer_videos` ORDER BY regdate desc  [ RunTime:0.0000s ]
+

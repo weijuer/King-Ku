@@ -1,0 +1,93 @@
+
+	
+	<!--页面底部信息-->
+	<div class="page-footer">
+		<p>Copyright ©2015 <b>朕乐视频 <a href="www.weijuer.com">weijuer.com</a></b> All Rights Reversed. </p>
+		<p>备案号：苏ICP备15011477号 版权所有 维权必究</p>
+	</div>
+	
+	<!-- 页面JS-->
+	<block name="page-js"></block>
+	
+	<!--公共JS引入-->
+	<script src="__PUBLIC__/js/pages/public.js"></script>
+	<script>
+	
+		$(function() {
+			//顶部菜单控制
+			//鼠标悬浮
+			$('.nav-tab li').has('ul').mouseover(function(){
+				$(this).children('ul').css('visibility','visible');
+			}).mouseout(function(){
+				$(this).children('ul').css('visibility','hidden');
+			});
+				
+			//鼠标点击
+			$(".nav-tab li").on("click",function(){
+				var self = $(this);
+				var noSelf = self.siblings();
+				self.addClass("nav-current");
+				noSelf.removeClass("nav-current");
+			});
+			
+			// 菜单选中样式
+			// var urlstr = location.href;
+			var urlStr = location.pathname;
+			var urlStatus=false;
+	//		console.log(urlStr);
+			$("#menu>li>a").each(function () {
+				var href = $(this).attr('href');
+	//			console.log(href);
+				if(urlStr.length == 1){
+					$("#menu>li>a").eq(0).parents("li").addClass('nav-current'); 
+					return;
+				}
+				if(urlStr.length > 1 && href.length != 19){
+					var hrefTag = href.split("/")[1].substr(0,5);
+	//				console.log(hrefTag);
+					if (urlStr.indexOf(hrefTag) > -1 && hrefTag!='') {
+						$(this).parents("li").addClass('nav-current');
+						return;
+					}
+				}
+				if (href!='' && urlStr.indexOf(href) > -1) {
+					$(this).parents("li").addClass('nav-current'); 
+					urlStatus = true;
+				} else {
+					$(this).parents("li").removeClass('nav-current');
+				}
+			});
+			//if (!urlstatus) {$("#menu>li>a").eq(0).parents("li").addClass('nav-current'); }
+			
+			/* Mobile */
+			$('#menu-wrap').prepend('<div id="menu-trigger">Menu</div>');
+			$("#menu-trigger").on('click', function(){
+				$("#menu").slideToggle();
+			});
+	
+			// iPad
+			var isiPad = navigator.userAgent.match(/iPad/i) != null;
+			if (isiPad) $('#menu ul').addClass('no-transition');
+			
+			
+			// 当前位置获取		
+			var posTag = $(".posTag").text();
+			var current = $("#menu>li.nav-current>a").html();
+			if(posTag) {		
+				$(".breadcrumb li.current").html(current);
+				$(".breadcrumb li.active").text(posTag);
+			}else{
+				$(".breadcrumb li.current").remove();
+				$(".breadcrumb li.active").remove();	
+			}
+			
+			// 百度自动推送
+	//		(function(){
+	//			var bp = document.createElement('script');
+	//			bp.src = '//push.zhanzhang.baidu.com/push.js';
+	//			var s = document.getElementsByTagName("script")[0];
+	//			s.parentNode.insertBefore(bp, s);
+	//		})();
+			
+		});
+	</script>

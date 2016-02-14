@@ -1,0 +1,9 @@
+[ 2016-01-06T14:06:31+08:00 ] 127.0.0.1 /WeChat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+NOTIC: [2] Missing argument 1 for WeChatAPI\Service\Wechat::__construct(), called in I:\web\thinkphp\ThinkPHP\Common\functions.php on line 681 and defined I:\web\thinkphp\Application\WeChatAPI\Service\Wechat.class.php 第 92 行.
+

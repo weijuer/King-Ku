@@ -1,0 +1,213 @@
+			<extend name="Base/common"/>
+			<block name="site-title"><title>朕乐视频</title></block>
+			<block name="page-css">
+			<link rel="stylesheet" href="__PUBLIC__/mobile/css/app.css">
+			</block>
+			<block name="top-js">
+				<!--<script src="__PUBLIC__/mobile/js/stream.js"></script>-->
+			</block>
+			<block name="body">
+			<!--页面内容开始-->
+			<div class="mui-content">
+				<div id="home" class="mui-control-content mui-active">
+					<!-- (循环轮播：开始) -->
+					<div id="gallery" class="mui-slider">
+						<div class="mui-slider-group mui-slider-loop">
+							<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#">
+									<img src="__PUBLIC__/img/banner/big0720150102210934.jpg">
+									<p class="mui-slider-title">低头思故乡</p>
+								</a>
+							</div>
+							<!-- (循环轮播：第一张轮播图片) -->
+							<div class="mui-slider-item">
+								<a href="https://www.baidu.com/">
+									<img src="__PUBLIC__/img/banner/big0020150102211033.jpg">
+									<p class="mui-slider-title">幸福就是可以一起睡觉</p>
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="__PUBLIC__/img/banner/big0120150101183428.jpg">
+									<p class="mui-slider-title">窗前明月光</p>
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="__PUBLIC__/img/banner/big0320150101183351.jpg">
+									<p class="mui-slider-title">疑是地上霜</p>
+								</a>
+							</div>					
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="__PUBLIC__/img/banner/big0420150101224343.jpg">
+									<p class="mui-slider-title">举头望明月</p>
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="#">
+									<img src="__PUBLIC__/img/banner/big0720150102210934.jpg">
+									<p class="mui-slider-title">低头思故乡</p>
+								</a>
+							</div>
+							<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="#">
+									<img src="__PUBLIC__/img/banner/big0020150102211033.jpg">
+									<p class="mui-slider-title">幸福就是可以一起睡觉</p>
+								</a>
+							</div>
+						</div>
+						<div class="mui-slider-indicator mui-text-right">
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+						</div>
+					</div>
+					<!-- (循环轮播：结束) -->
+					
+					<!-- (电影导航：开始) -->
+					<div class="mui-my-slider">
+						<h4 class="sub-title">电影</h4>
+			            <div class="mui-my-slider-item">
+			                <ul id="videoList" class="mui-table-view mui-grid-view">
+			                	<!--循环输出电影列表开始-->
+			                	<foreach name="videoList" item="vo">
+			                	<li class="mui-table-view-cell mui-media mui-col-xs-4">
+			                		<!--<a data-id="{$vo.vid}" class="video-link" href="/Mobile/Video/videoDetail/{$vo.vid}.shtml">-->
+			                		<a data-id="{$vo.vid}" class="video-link" href="{:U('Mobile/Video/videoDetail',array('vid'=>$vo['vid']))}">
+			                			<!--二天时间为最新-->
+			                			<if condition="$today-$vo.regdate lt 2*24*3600">
+			                				<span class="label label-new">NEW</span>
+			                			</if>
+			                			<img class="mui-media-object" src="/Public/images/poster/{$vo.poster}">
+			                			<span class="tips-bar mui-h6">全集</span>
+			                			<div class="mui-media-body"><p class="video-name mui-h6">{$vo.videoname}</p></div>
+			                		</a>
+			                	</li>
+			                	</foreach>
+			                	<!--循环输出电影列表结束-->
+			                	<!--查看更多-->
+			                	<li class="mui-table-view-cell mui-media mui-col-xs-4">
+			                		<a class="more-link" href="{:U('Video/videoList')}">
+			                			<div class="mui-media-body">查看更多</div>
+			                		</a>
+			                	</li>
+			                </ul>
+			            </div>
+				    </div>
+				    <!-- (电影导航：结束) -->
+				    
+				    <!-- (音乐导航：开始) -->
+					<div class="mui-my-slider">
+						<h4 class="sub-title">音乐</h4>
+			            <div class="mui-my-slider-item">
+			                <ul id="musicList" class="mui-table-view mui-grid-view">
+								<li class="mui-table-view-cell mui-media mui-col-xs-4">
+			                		<a data-id="" class="video-link" href="{:U('Music/musicList')}">
+			                			<span class="label label-new">NEW</span>
+			                			<img class="mui-media-object" src="/Public/img/music.png">
+			                			<!--<i class="fa fa-music fa-4x"></i>-->
+			                			<span class="tips-bar mui-h6">MP3</span>
+			                			<div class="mui-media-body"><p class="video-name mui-h6">等你等了很久</p></div>
+			                		</a>
+			                	</li>
+			                	<!--查看更多-->
+			                	<li class="mui-table-view-cell mui-media mui-col-xs-4">
+			                		<a class="more-link" href="{:U('Music/musicList')}">
+			                			<div class="mui-media-body">查看更多</div>
+			                		</a>
+			                	</li>
+			                </ul>
+			            </div>
+				    </div>
+				    <!-- (音乐导航：结束) -->
+				    
+				    <!-- (美文导航：开始) -->
+					<div class="mui-my-slider">
+						<h4 class="sub-title">美文</h4>
+			            <div class="mui-my-slider-item">
+			                <ul id="articleList" class="mui-table-view mui-grid-view">
+			                	<li class="mui-table-view-cell mui-media mui-col-xs-4">
+			                		<a data-id="" class="video-link" href="/videoDetail/">
+			                			<span class="label label-new">NEW</span>
+			                			<img class="mui-media-object" src="/Public/img/article.png">
+			                			<!--<i class="fa fa-music fa-4x"></i>-->
+			                			<span class="tips-bar mui-h6">小说</span>
+			                			<div class="mui-media-body"><p class="video-name mui-h6">《那小子真帅》</p></div>
+			                		</a>
+			                	</li>
+			                </ul>
+			            </div>
+				    </div>
+				    <!-- (美文导航：结束) -->
+				    
+				</div>
+				<div id="tabbar-with-video" class="mui-control-content">
+					<h4 class="sub-title">电影</h4>
+				    <ul id="videoList" class="mui-table-view mui-grid-view">
+				    	<!--循环输出电影列表开始-->
+				    	<foreach name="videoList" item="vo">
+				    	<li class="mui-table-view-cell mui-media mui-col-xs-4">
+				    		<a data-id="{$vo.vid}" class="video-link" href="{:U('Mobile/Video/videoDetail',array('vid'=>$vo['vid']))}">
+				    			<!--二天时间为最新-->
+				    			<if condition="$today-$vo.regdate lt 2*24*3600">
+				    				<span class="label label-new">NEW</span>
+				    			</if>
+				    			<img class="mui-media-object" src="/Public/images/poster/{$vo.poster}">
+				    			<span class="tips-bar mui-h6">全集</span>
+				    			<div class="mui-media-body"><p class="video-name mui-h6">{$vo.videoname}</p></div>
+				    		</a>
+				    	</li>
+				    	</foreach>
+				    	<!--循环输出电影列表结束-->
+				    </ul>
+				</div>
+				
+				<div id="tabbar-with-music" class="mui-control-content">
+					<h4 class="sub-title">音乐</h4>
+				</div>
+				
+				<div id="tabbar-with-article" class="mui-control-content">
+					<h4 class="sub-title">美文</h4>
+						<ul class="mui-table-view mui-table-view-chevron">
+							<li class="mui-table-view-cell mui-media">
+								<a class="mui-navigate-right">
+									<img class="mui-media-object mui-pull-left" src="/Public/img/p1.jpg">
+									<div class="mui-media-body">
+										CBD
+										<p class='mui-ellipsis'>烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a class='mui-navigate-right' href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="/Public/img/p2.jpg">
+									<div class="mui-media-body">
+										远眺
+										<p class='mui-ellipsis'>静静的看这个世界，最后终于疯了</p>
+									</div>
+								</a>
+							</li>
+							<li class="mui-table-view-cell mui-media">
+								<a class="mui-navigate-right">
+									<img class="mui-media-object mui-pull-left" src="/Public/img/p3.jpg">
+									<div class="mui-media-body">
+										幸福
+										<p class='mui-ellipsis'>能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+				</div>
+				
+			</div>
+			<!--页面内容结束-->
+			</block>
+			
+			<block name="page-js">
+			<script src="__PUBLIC__/mobile/js/app/index.js"></script>
+			</block>

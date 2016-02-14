@@ -1,0 +1,116 @@
+html, body {
+	height: 100%;
+}
+.mui-content {
+	overflow: auto;
+    height: calc(100% - 0px);
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+    color: #55BB54;
+}
+.mui-bar .mui-title {    
+	font-weight: bold;
+	color: #55BB54;
+}
+.mui-icon-left-nav {
+	color: #55BB54;	
+}
+.mui-my-slider-item .mui-grid-view {
+    white-space: nowrap;
+    overflow: auto;
+    padding: 5px 0!important;
+}
+.mui-table-view.mui-grid-view .mui-table-view-cell {
+	padding: 5px;
+	margin: 0;
+}
+.video-link {
+	padding: 0!important;
+	margin: 0!important;
+}
+.mui-media-object {
+	display: block;
+}
+.label {
+	background-color: #d1dade;
+	color: #5e5e5e;
+	font-size: 10px;
+	font-weight: 600;
+	padding: 2px 14px;
+	line-height: 1;
+	text-shadow: none;
+}				
+.label-new {
+	position: absolute;
+	top: 0.5em;
+	left: -1.25em;
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	background-color: #ed5565;
+	color: #FFF;
+}
+.tips-bar {
+	display: inline-block;
+    width: 100%;
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+    background: rgba(210, 210, 210, 0.51);
+    color: #000000;
+}
+.video-name {
+	color: #000;
+	font-weight: bold;
+}
+.sub-title {
+	background-color:#efeff4;
+	margin-left: 1rem;
+}
+
+/*电影列表页*/
+.mui-table-view.mui-grid-view {
+	padding: 0;
+}
+/*音乐列表页*/
+.mui-control-content {
+	border-bottom: none!important;
+	min-height: 23em;
+}
+.mui-loading {
+    margin: 9em auto;
+}
+
+.mui-spinner {
+	width: 30px;
+	height: 30px;
+}
+
+.waiting-tips {
+	margin-top: 2em;
+    text-align: center;
+    color: #FF0000;
+}
+.song-item {
+	padding-right: 15px!important;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item .mui-table-view:after {
+	height: 1px;
+}
+
+.song-title {
+	font-weight: bold;
+    color: #1F1F1F;
+}
+
+.fa-play-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+	line-height: 1;
+}

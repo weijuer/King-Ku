@@ -1,0 +1,228 @@
+			<extend name="Base/common"/>
+	
+			<block name="body">
+			<!--页面内容开始-->
+	        <div class="row content-body">
+	            <div class="col-sm-3">
+	                <div class="ibox float-e-margins">
+	                    <div class="ibox-content">
+	                        <div class="file-manager">
+	                            <h5 class="posTag">资源筛选</h5>
+								
+								<!-- 语言 -->
+								<div class="video-list-box">
+									<h5 class="video-list-title">语言：</h5>
+									<ul class="video-list lang">
+										<li><a href="javascript:void(0);" class="file-control active" data-evt="ALL">全部</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="CH">国语</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="GD">粤语</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="EG">英语</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="KF">韩语</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="QT">其他</a></li>
+									</ul>
+								</div>
+								
+								<!-- 分类 -->
+								<div class="video-list-box">
+									<h5 class="video-list-title">分类：</h5>
+									<ul class="video-list kind">
+										<li><a href="javascript:void(0);" class="file-control" data-evt="ALL">全部</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="VD">视频</a></li>
+										<li><a href="javascript:void(0);" class="file-control active" data-evt="MV">电影</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="TV">电视剧</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="ZY">综艺</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="DH">动漫</a></li>
+									</ul>
+								</div>
+								
+								<!-- 年代 -->
+								<div class="video-list-box">
+									<h5 class="video-list-title">年代：</h5>
+									<ul class="video-list age">
+										<li><a href="javascript:void(0);" class="file-control active" data-evt="ALL">全部</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="2015">2015</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="2014">2014</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="2013">2013</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="2013older">2013以前</a></li>
+									</ul>
+								</div>
+								
+								<!-- 地区 -->
+								<div class="video-list-box">
+									<h5 class="video-list-title">地区：</h5>
+									<ul class="video-list region">
+										<li><a href="javascript:void(0);" class="file-control active" data-evt="ALL">全部</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="ND">内地</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="GT">港台</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="OM">欧美</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="RH">日韩</a></li>
+										<li><a href="javascript:void(0);" class="file-control" data-evt="QT">其他</a></li>
+									</ul>
+								</div>
+								
+	                            <div class="hr-line-dashed"></div>
+	                            <button class="btn btn-primary btn-block select-search-btn">搜索</button>
+	                            <div class="hr-line-dashed"></div>
+	                            <!--<h5>文件夹</h5>
+	                            <ul class="folder-list" style="padding: 0">
+	                                <li><a href="file_manager.html"><i class="fa fa-folder"></i> 文件</a>
+	                                </li>
+	                                <li><a href="file_manager.html"><i class="fa fa-folder"></i> 图片</a>
+	                                </li>
+	                                <li><a href="file_manager.html"><i class="fa fa-folder"></i> Web页面</a>
+	                                </li>
+	                                <li><a href="file_manager.html"><i class="fa fa-folder"></i> 插图</a>
+	                                </li>
+	                                <li><a href="file_manager.html"><i class="fa fa-folder"></i> 电影</a>
+	                                </li>
+	                                <li><a href="file_manager.html"><i class="fa fa-folder"></i> 书籍</a>
+	                                </li>
+	                            </ul>-->
+	                            <h5 class="tag-title">热门标签</h5>
+	                            <ul class="tag-list" style="padding: 0">
+	                                <li><a href="javascript:void(0);">爱人</a>
+	                                </li>
+	                                <li><a href="javascript:void(0);">工作</a>
+	                                </li>
+	                                <li><a href="javascript:void(0);">家庭</a>
+	                                </li>
+	                                <li><a href="javascript:void(0);">孩子</a>
+	                                </li>
+	                                <li><a href="javascript:void(0);">假期</a>
+	                                </li>
+	                                <li><a href="javascript:void(0);">音乐</a>
+	                                </li>
+	                                <li><a href="javascript:void(0);">照片</a>
+	                                </li>
+	                                <li><a href="javascript:void(0);">电影</a>
+	                                </li>
+	                            </ul>
+	                            <div class="clearfix"></div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-sm-9 animated fadeInRight">
+	                <div class="row">
+						
+						<!-- 电影图标区开始 -->
+						<div class="file-container col-sm-12">
+							<foreach name="videoList" item="vo">
+								<div class="file-box m-r-sm">
+									<div class="file">
+										<!--<a href="__URL__/videoDetail/vid/{$vo.vid}.shtml">--> 
+										<!--<a href="{:U('/videoDetail',array('vid'=>$vo['vid']))}">-->
+										<a href="/videoDetail/{$vo.vid}.shtml"> 
+											<span class="corner"></span>
+											<if condition="$vo.poster neq '' ">												
+												<div class="image">
+													<span class="tips-bar is-hd">{$vo.is_hd}</span>
+													<img alt="image" class="img-responsive" src="__PUBLIC__/images/poster/{$vo.poster}">
+												</div>
+											<else /> 
+												<div class="icon">
+													<span class="tips-bar is-hd">{$vo.is_hd}</span>
+													<i class="fa fa-film"></i>
+												</div>	
+											</if>
+	
+											<div class="file-name">
+												<if condition="$today-$vo.regdate lt 2*24*3600">
+													<span class="label label-danger label-new pull-right">NEW</span>
+												</if>
+												<p class="small text-center">{$vo.videoname}</p>
+												<p class="small file-addtime">添加时间：<small>{$vo.regdate|date="Y-m-d",###}</small></p>
+											</div>
+										</a>
+										<div class="caption">
+		                                    <h3>朕乐视频</h3>
+		                                    <p>By 朕</p>
+										</div>
+									</div>
+	
+								</div>
+							</foreach>
+	
+	                    </div>
+						<!-- 电影图标区结束 -->
+						
+						<!-- 分页 -->
+						<div class="page">{$page}</div>
+	                </div>
+	            </div>
+	        </div>
+			<!--页面内容结束-->
+			</block>
+	        
+	<block name="page-js">		
+	<script>
+		$(document).ready(function(){
+			// 鼠标悬浮
+			// $(".file-box").each(function(){animationHover(this,"pulse")});
+			
+			// 筛选选中样式设置
+			$(".video-list-box .video-list>li").on("click",function(){
+				var self = $(this).find("a");
+				var notSelf = $(this).siblings().find("a");
+				self.addClass("active");
+				notSelf.removeClass("active");
+			});
+			
+			//搜索按钮控制
+			$(".select-search-btn").on("click",function(){
+				var url = "__URL__/videoList1";
+				var lang = $(".video-list-box .lang>li>a.active").attr("data-evt");
+				var age = $(".video-list-box .age>li>a.active").attr("data-evt");
+				var region = $(".video-list-box .region>li>a.active").attr("data-evt");
+				var data = {'lang':lang,'age':age,'region':region};
+				$.getJSON(url,data,function(result){
+					// 清除之前内容		   
+					$(".file-container").empty();
+					$(".page").empty();
+					
+					var html = '';
+					$.each(result,function(i,k){
+						//console.log(k.vid);
+						var logo ='';
+						//是否含有海报图片
+						if(k.poster!=''){
+							logo = '<div class="image">'
+										+'<span class="tips-bar is-hd">'+k.is_hd+'</span>'
+										+'<img alt="image" class="img-round img-shadow" src="__PUBLIC__/images/poster/'+k.poster+'">'
+								   +'</div>';
+						}else {
+							logo = '<div class="icon">'
+										+'<span class="tips-bar is-hd">'+k.is_hd+'</span>'
+										+'<i class="fa fa-film"></i>'
+								   +'</div>';
+						}
+						
+						// 是否插入新标签
+						
+						// 主体内容拼接		   
+						html = '<div class="file-box col-sm-3 col-xs-4">'
+									+'<div class="file">'
+									+'<a href="__URL__/videoDetail/vid/'+k.vid+'">'
+										+'<span class="corner"></span>'
+										+logo
+										+'<div class="file-name">'
+											+'<span class="label label-danger label-new pull-right">NEW</span>'
+											+'<p class="small text-center">'+k.videoname+'</p>'
+											+'<p class="small file-addtime">添加时间：<small>'+getTime(k.regdate)+'</small></p>'
+										+'</div>'
+									+'</a>'
+									+'<div class="caption">'
+	                                    +'<h3>朕乐视频</h3>'
+	                                    +'<p>By 朕</p>'
+									+'</div>'
+									+'</div>'
+								+'</div>';
+
+						//插入新内容
+						$(".file-container").append(html);
+					});
+				});
+			});
+		});
+	</script>
+	</block>

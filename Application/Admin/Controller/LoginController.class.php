@@ -1,10 +1,20 @@
 <?php
+// +----------------------------------------------------------------------
+// | 朕乐视频 [ 一家绝逼的视频网站 ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2015 http://www.weijuer.com All rights reserved.
+// +----------------------------------------------------------------------
+// | Author: weijuer <ch_weijuer@163.com> <http://www.weijuer.com>
+// +----------------------------------------------------------------------
+
 namespace Admin\Controller;
 use Think\Controller;
+
 /**
 * Class LoginController
-* @package Admin\Controller
+* @package Admin\Controller\HomeController
 */
+
 class LoginController extends Controller {
 
     /**
@@ -103,7 +113,7 @@ class LoginController extends Controller {
      * 用户注册
      */
 	 
-	public function register(){
+	public function register() {
 		// 不带任何参数 自动定位当前操作的模板文件
 		// 使用layout控制模板布局
 		layout('Layout/layout_login');

@@ -1,8 +1,16 @@
 <?php
-namespace Admin\Controller;
-use Think\Controller;
+// +----------------------------------------------------------------------
+// | 朕乐视频 [ 一家绝逼的视频网站 ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2015 http://www.weijuer.com All rights reserved.
+// +----------------------------------------------------------------------
+// | Author: weijuer <ch_weijuer@163.com> <http://www.weijuer.com>
+// +----------------------------------------------------------------------
 
-class VideoController extends Controller {
+namespace Admin\Controller;
+use Admin\Controller\HomeController;
+
+class VideoController extends HomeController {
 	
 	/*
 	* 电影列表

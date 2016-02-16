@@ -1,13 +1,29 @@
 <?php
-namespace Admin\Controller;
-use Think\Controller;
+// +----------------------------------------------------------------------
+// | 朕乐视频 [ 一家绝逼的视频网站 ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2015 http://www.weijuer.com All rights reserved.
+// +----------------------------------------------------------------------
+// | Author: weijuer <ch_weijuer@163.com> <http://www.weijuer.com>
+// +----------------------------------------------------------------------
 
-class IndexController extends Controller {
+namespace Admin\Controller;
+use Admin\Controller\HomeController;
+
+class IndexController extends HomeController {
 	// 后台首页展示
     public function index(){
+		
 		// 不带任何参数 自动定位当前操作的模板文件
 		// 使用layout控制模板布局
 		layout('Layout/layout');
+		$this->display();
+	}
+	
+	//附v1首页显示
+	public function index_v1(){
+		
+		// 不带任何参数 自动定位当前操作的模板文件
 		$this->display();
 	}    
 		

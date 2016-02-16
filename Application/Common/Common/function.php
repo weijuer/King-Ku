@@ -20,14 +20,31 @@
  * @return integer 0-未登录，大于0-当前登录用户ID
  * @author weijuer <ch_weijuer@163.com>
  */
-function is_login() {
-	$user = session ( 'user_auth' );
+function is_login_old() {
+	$user = session ( 'userid' );
 	if (empty ( $user )) {
 		return 0;
 	} else {
 		return session ( 'user_auth_sign' ) == data_auth_sign ( $user ) ? $user ['uid'] : 0;
 	}
 }
+
+/**
+ * 检测用户是否登录
+ *
+ * @return boolean true-已登录，false-未登录
+ * @author weijuer <ch_weijuer@163.com>
+ */
+ 
+function is_login() {
+	$user = session ( 'userid' );
+	if (empty ( $user )) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
 
 /**
  * 检测当前用户是否为管理员

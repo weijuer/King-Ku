@@ -184,11 +184,13 @@ a, input,button,textarea{
 	-webkit-border-radius: 0 0 3px 3px;
 	border-radius: 0 0 3px 3px;
 }
+
 .navbar {
 	min-height: 45px;
 	border: 0;
 }
 .navbar-container {
+	padding: 0 14em;
 	background: #FFF;
 	border-bottom: 1px solid #CCCCCC;
 	box-shadow: 0px 0px 5px #999;
@@ -198,17 +200,30 @@ a, input,button,textarea{
 .navbar-brand {
 	height: 45px;
 }
+.user-login-box {
+	float: left;
+}
+.user-login-box li {
+	float: left;
+	display: inline-block;
+	line-height: 1.5rem;
+	position: relative;
+}
+.user-login-box li a {
+	display: block;
+	padding: 1rem 1rem;
+	color: #AAAAAA;
+	height: 45px;
+	text-transform: uppercase;
+	font: 1.4rem "微软雅黑";
+}
 
 .nav-search {
-	margin: 1rem 1rem 0 2rem;
+	/*margin: 1rem 1rem 0 1rem;*/
 }
 
 .nav-search-item {
-	font-size: 1.4rem;
-	height: 2rem;
-	line-height: 2rem;
-	position: relative;
-	top: -0.2rem;
+	margin: 1rem;
 	text-indent: 0.3em;
 	border: 1px solid #CCCCCC;
 }
@@ -225,7 +240,11 @@ a, input,button,textarea{
 }
 
 .content-body {	
-	margin: 2rem 3rem;
+	margin: 2rem 14rem;
+}
+
+.tabs-container {
+	margin-bottom: 1rem;
 }
 
 .fixed-table-container thead th,.fixed-table-container tbody td {
@@ -285,6 +304,12 @@ a, input,button,textarea{
 	display: block;
 }
 
+/*模态框*/
+.modal-title-bar {
+	border-bottom: 1px dashed #919191;
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+}
 
 /* 资源详情页面 */
 

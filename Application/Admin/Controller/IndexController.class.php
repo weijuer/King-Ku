@@ -13,7 +13,9 @@ use Admin\Controller\HomeController;
 class IndexController extends HomeController {
 	// 后台首页展示
     public function index(){
-		
+		$time = time();
+		$this->assign('today',$time);// 当前时间赋值
+				
 		// 不带任何参数 自动定位当前操作的模板文件
 		// 使用layout控制模板布局
 		layout('Layout/layout');
@@ -22,6 +24,13 @@ class IndexController extends HomeController {
 	
 	//附v1首页显示
 	public function index_v1(){
+		
+		// 不带任何参数 自动定位当前操作的模板文件
+		$this->display();
+	}
+	
+	//邮箱页显示
+	public function mailbox(){
 		
 		// 不带任何参数 自动定位当前操作的模板文件
 		$this->display();

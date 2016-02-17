@@ -18,9 +18,9 @@ class HomeController extends Controller {
 
 	/* 空操作，用于输出404页面 */
 	public function _empty(){
-		header( "HTTP/1.0  404  Not Found" );
-		$this->error("你好像走丢咯~");
-//      echo '模块不存在！';
+//		header( "HTTP/1.0  404  Not Found" );
+//		$this->error("你好像走丢咯~");
+        echo '模块不存在！';
 //		$this->redirect('Public:404');
 	}
 	

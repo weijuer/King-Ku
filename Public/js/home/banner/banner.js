@@ -43,7 +43,7 @@ $(function(){
 				//prev  -->  curr     prev中的图片li轮换到curr的位置      其他一次轮换
 				prev.find("span").css("opacity",0);
 				$(".main_banner_box li").find("p").css({"bottom":"-50px"});//所有标题隐藏
-				prev.stop(true,true).animate({width:"670px",height:"280px",left:"255px",top:0,opacity:1},timer,function(){
+				prev.stop(true,true).animate({width:"670px",height:"280px",left:"170px",top:0,opacity:1},timer,function(){
 					$(this).find("p").animate({"bottom":"0px"});	//当前这张图片的标题运动出来
 				});
 				index_2--;
@@ -64,7 +64,7 @@ $(function(){
 				//next  -->  curr     next中的图片li轮换到curr的位置      其他一次轮换
 				next.find("span").css("opacity",0);
 				$(".main_banner_box li").find("p").css({"bottom":"-50px"});//所有标题隐藏
-				next.stop(true,true).animate({width:"670px",height:"280px",left:"255px",top:0,opacity:1},timer,function(){
+				next.stop(true,true).animate({width:"670px",height:"280px",left:"170px",top:0,opacity:1},timer,function(){
 					$(this).find("p").animate({"bottom":"0px"});	//当前这张图片的标题运动出来
 				});
 				prev.stop(true,true).animate({width:"450px",height:"180px",left:"0px",top:"60px",opacity:0},timer,function(){

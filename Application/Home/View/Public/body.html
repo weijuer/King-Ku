@@ -10,6 +10,127 @@
 			</ol>
 			
 			<block name="body"></block>
+			
+			<!--登录注册模态框开始-->
+			<div id="login-modal-form" class="modal fade" aria-hidden="true">
+		        <div class="modal-dialog">
+		            <div class="modal-content">
+		                <div class="modal-body">
+		                    <div class="row">
+		                        <div class="col-sm-6 b-r">
+		                            <h3 class="m-t-none m-b">登录</h3>
+		
+		                            <p>欢迎登录本站(⊙o⊙)</p>
+		
+		                            <form role="form">
+		                                <div class="form-group">
+		                                    <label>用户名：</label>
+		                                    <input type="email" placeholder="请输入用户名" class="form-control">
+		                                </div>
+		                                <div class="form-group">
+		                                    <label>密码：</label>
+		                                    <input type="password" placeholder="请输入密码" class="form-control">
+		                                </div>
+		                                <div>
+		                                    <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit"><strong>登录</strong>
+		                                    </button>
+		                                    <label>
+		                                        <input type="checkbox" class="i-checks">自动登录</label>
+		                                </div>
+		                            </form>
+		                        </div>
+		                        <div class="col-sm-6">
+		                            <h4>还不是会员？</h4>
+		                            <p>您可以注册一个账户</p>
+		                            <p class="text-center">
+		                                <a data-toggle="modal" href="#reg-modal-form"><i class="fa fa-sign-in big-icon"></i></a>
+		                            </p>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <!--登录注册模态框结束-->
+		    
+		    
+		    <!--注册模态框开始-->
+			<div id="reg-modal-form" class="modal fade" aria-hidden="true">
+		        <div class="modal-dialog">
+		            <div class="modal-content">
+		                <div class="modal-body">
+			    			<form id="regForm" action="form_wizard.html#" class="wizard-big">
+	                            <h1>账户</h1>
+	                            <fieldset>
+	                                <h2 class="modal-title-bar">账户信息</h2>
+	                                <div class="row">
+	                                    <div class="col-sm-8">
+	                                        <div class="form-group">
+	                                            <label>用户名 *</label>
+	                                            <input id="userName" name="userName" type="text" class="form-control required">
+	                                        </div>
+	                                        <div class="form-group">
+	                                            <label>密码 *</label>
+	                                            <input id="password" name="password" type="text" class="form-control required">
+	                                        </div>
+	                                        <div class="form-group">
+	                                            <label>确认密码 *</label>
+	                                            <input id="confirm" name="confirm" type="text" class="form-control required">
+	                                        </div>
+	                                    </div>
+	                                    <div class="col-sm-4">
+	                                        <div class="text-center">
+	                                            <div style="margin-top: 20px">
+	                                                <i class="fa fa-sign-in" style="font-size: 180px;color: #e5e5e5 "></i>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </fieldset>
+	                            
+	                            <h1>个人资料</h1>
+	                            <fieldset>
+	                                <h2 class="modal-title-bar">个人资料信息</h2>
+	                                <div class="row">
+	                                    <div class="col-sm-6">
+	                                        <div class="form-group">
+	                                            <label>姓名 *</label>
+	                                            <input id="name" name="name" type="text" class="form-control required">
+	                                        </div>
+	                                    </div>
+	                                    <div class="col-sm-6">
+	                                        <div class="form-group">
+	                                            <label>Email *</label>
+	                                            <input id="email" name="email" type="text" class="form-control required email">
+	                                        </div>
+	                                        <div class="form-group">
+	                                            <label>地址 *</label>
+	                                            <input id="address" name="address" type="text" class="form-control">
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </fieldset>
+	
+	                            <h1>警告</h1>
+	                            <fieldset>
+	                                <div class="text-center" style="margin-top: 120px">
+	                                    <h2 class="modal-title-bar">你是火星人 :-)</h2>
+	                                </div>
+	                            </fieldset>
+	
+	                            <h1>完成</h1>
+	                            <fieldset>
+	                                <h2 class="modal-title-bar">条款</h2>
+	                                <input id="acceptTerms" name="acceptTerms" type="checkbox" class="i-checks required">
+	                                <label for="acceptTerms">我同意注册条款</label>
+	                            </fieldset>
+	                        </form>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <!--注册模态框结束-->
+		    
 		</div>
 		<!--主体内容结束-->
 	</div>

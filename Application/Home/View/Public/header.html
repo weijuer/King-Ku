@@ -32,7 +32,7 @@
 								</li>
 							</ul>
 						</li>-->
-						<li> <a href="{:U('/videoList')}">电 影</a>
+						<li> <a href="{:U('/videoList')}">迷 影</a>
 							<ul>
 								<li> <a href="javascript:void(0);">朕乐影院</a>
 									<ul>
@@ -88,17 +88,17 @@
 								</li>
 							</ul>
 						</li>
-						<li><a href="javascript:void(0);">综 艺</a></li>
-						<li><a href="javascript:void(0);">动 漫</a>
+						<li><a href="javascript:void(0);">痴 乐</a></li>
+						<li><a href="javascript:void(0);">刨 文</a>
 							<ul>
-								<li><a href="">日本动漫</a></li>
-								<li><a href="">国产动漫</a></li>
-								<li><a href="">海外动漫</a></li>
-								<li><a href="">动漫电影</a></li>
+								<li><a href="">站长推荐</a></li>
+								<li><a href="">情感好文</a></li>
+								<li><a href="">网络转载</a></li>
+								<li><a href="">文学大陌</a></li>
 							</ul>
 						</li>
-						<li><a href="javascript:void(0);">关 于</a></li>
 						<li><a href="javascript:void(0);">杂 役</a></li>
+						<li><a href="javascript:void(0);">关 于</a></li>
 						<!-- <li><a href="javascript:void(0);">联 系</a>
 							<ul>
 								<li><a href="javascript:void(0);">微博</a>
@@ -113,11 +113,24 @@
 								</li>
 							</ul>
 						</li> -->
+					</ul>
+					<ul class="user-login-box">
 						<li class="nav-search">
 							<form method="post">
-								<input type="text" name="search" class="nav-search-item" placeholder="搜索" />
+							<div class="input-group">	
+								<input id="navSearch" class="nav-search-item" type="text" name="search" placeholder="搜索" />
+								<div class="input-group-btn">
+		                            <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+		                                <span class="caret"></span>
+		                            </button>-->
+		                            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+		                            </ul>
+		                        </div>
+		                    </div> 
 							</form>
 						</li>
+						<li><a data-toggle="modal" href="#reg-modal-form">注 册</a></li>
+						<li><a data-toggle="modal" href="#login-modal-form">登 录</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 		    </div>

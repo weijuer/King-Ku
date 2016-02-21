@@ -16,6 +16,7 @@
 	<script src="__PUBLIC__/js/plugins/steps/jquery.steps.min.js"></script>
     <script src="__PUBLIC__/js/plugins/validate/jquery.validate.min.js"></script>
     <script src="__PUBLIC__/js/plugins/validate/messages_zh.min.js"></script>
+	<script src="__PUBLIC__/js/plugins/layer/layer.min.js"></script>
 	<script>
 	
 		$(function() {
@@ -73,7 +74,6 @@
 			// iPad
 			var isiPad = navigator.userAgent.match(/iPad/i) != null;
 			if (isiPad) $('#menu ul').addClass('no-transition');
-			
 			
 			// 当前位置获取		
 			var posTag = $(".posTag").text();
@@ -146,6 +146,111 @@
 					form.submit()}
 			}).validate({errorPlacement:function(error,element){element.before(error)},rules:{confirm:{equalTo:"#password"}}});
 			
+			
+			// 登录按钮
+			$(".login-btn").on("click",function(){
+				var username = $("#username").val();
+				var psw = $("#password").val();									
+				
+				if(isNull(username)){
+					// errorMsg("请输入用户名！");
+					//layer插件 tips层-上
+					layer.tips("出错啦，用户名不能为空！", "#username", {
+						tips: 1
+					});
+					return;
+				}
+				
+				if(isNull(psw)){
+					// errorMsg("请输入密码！");
+					//layer插件 tips层-上
+					layer.tips("出错啦，密码不能为空！", "#password", {
+						tips: 1
+					});
+					return;
+				}
+				
+				var pattern=/^([a-zA-Z0-9@_*#]{6,22})$/;
+				if(!pattern.test(psw)){
+					// errorMsg("密码格式不在确！");
+					//layer插件 tips层-上
+					layer.tips("出错啦，密码格式不在确！", "#password", {
+						tips: 1
+					});
+					return;
+				}
+				
+				var params=$("#LoginForm").serialize();
+				var url = "User/loginCheck";
+				$.post(url,params,function( msg ) {
+					if(msg.info == 'ok'){
+						//登录后跳到登录页面，否则直接进入首页
+						layer.msg("登录成功，正在加载...", {icon: 16});
+						setTimeout(function(){
+							window.location.href = msg.callback;
+						}, 2000);
+					}else {
+						//正上方
+						layer.msg(msg.info, {
+							offset: ['220px', '45%'],
+							shift: 6
+						});
+					}
+				});
+			});	
+			
+			// 注册按钮
+			$(".reg-btn").on("click",function(){
+				var username = $("#username").val();
+				var psw = $("#password").val();									
+				
+				if(isNull(username)){
+					// errorMsg("请输入用户名！");
+					//layer插件 tips层-上
+					layer.tips("出错啦，用户名不能为空！", "#username", {
+						tips: 1
+					});
+					return;
+				}
+				
+				if(isNull(psw)){
+					// errorMsg("请输入密码！");
+					//layer插件 tips层-上
+					layer.tips("出错啦，密码不能为空！", "#password", {
+						tips: 1
+					});
+					return;
+				}
+				
+				var pattern=/^([a-zA-Z0-9@_*#]{6,22})$/;
+				if(!pattern.test(psw)){
+					// errorMsg("密码格式不在确！");
+					//layer插件 tips层-上
+					layer.tips("出错啦，密码格式不在确！", "#password", {
+						tips: 1
+					});
+					return;
+				}
+				
+				var params=$("#LoginForm").serialize();
+				var url = "__URL__/loginCheck";
+				$.post(url,params,function(msg){
+					if(msg.info == 'ok'){
+						//登录后跳到登录页面，否则直接进入首页
+						layer.msg("登录成功，正在加载...", {icon: 16});
+						setTimeout(function(){
+							window.location.href = msg.callback;
+						}, 2000);
+					}else {
+						// errorMsg(msg.info);
+						//正上方
+						layer.msg(msg.info, {
+							offset: ['220px', '45%'],
+							shift: 6
+						});
+					}
+				});
+			});	
 			
 			// 百度自动推送
 	//		(function(){

@@ -305,10 +305,28 @@ a, input,button,textarea{
 }
 
 /*模态框*/
+.modal-dialog {
+	margin: 10% auto;
+}
 .modal-title-bar {
 	border-bottom: 1px dashed #919191;
 	margin-bottom: 0.5rem;
 	padding-bottom: 0.5rem;
+	text-align: center;
+}
+
+/*网站协议*/
+.protocol {
+	text-align: justify;
+	overflow: auto;
+	height: 20em;
+	padding: 1em;
+	border: 1px solid #CCCCCC;
+	margin-bottom: 0.5em;
+}
+#acceptTerms-error {
+	position: absolute;
+	left: 9em;
 }
 
 /* 资源详情页面 */

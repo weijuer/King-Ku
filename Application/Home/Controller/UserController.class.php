@@ -8,6 +8,7 @@
 // +----------------------------------------------------------------------
 
 namespace Home\Controller;
+use Home\Controller\HomeController;
 
 /**
  * 用户控制器
@@ -19,101 +20,96 @@ class UserController extends HomeController {
 	public function index() {
 		
 	}
+	
 	/* 注册页面 */
-	public function register($username = '', $password = '', $repassword = '', $mobile = '', $truename = '', $email = '', $verify = '') {
-		if (! C ( 'USER_ALLOW_REGISTER' )) {
-			$this->error ( '注册已关闭' );
-		}
+	public function register($username = '', $password = '', $repassword = '', $mobile = '', $nickname = '', $email = '', $verify = '') {
+//		if (! C ( 'USER_ALLOW_REGISTER' )) {
+//			$this->error ( '注册已关闭' );
+//		}
+
 		if (IS_POST) { // 注册用户
 			$username = trim ( $username );
-			$hasusername = D ( 'Common/User' )->where ( array (
-					'nickname' => $username 
+			$hasusername = M ( 'User' )->where ( array (
+					'username' => $username 
 			) )->getfield ( 'uid' );
+			
 			/* 测试用户名 */
 			if (empty ( $username )) {
-				$this->error ( '用户名不能为空！' );
+//				$this->error ( '用户名不能为空！' );
+				$msg['info'] = "用户名不能为空！";
 			}else if (!preg_match('/[a-zA-Z0-9_]$/', $username)) {
-				$this->error ( '用户名必须由‘字母’、‘数字’、‘_’组成！' );
-			}else if (strlen ( $username ) > 16) {
-				$this->error ( '用户名长度必须在16个字符以内！' );
-			} else if ($hasusername) {
-				$this->error ( '该用户名已经存在，请重新填写用户名！' );
+//				$this->error ( '用户名必须由‘字母’、‘数字’、‘_’组成！' );
+				$msg['info'] = "用户名必须由‘字母’、‘数字’、‘_’组成！";
+			}else if (strlen ( $username ) > 8) {
+//				$this->error ( '用户名长度必须在8个字符以内！' );
+				$msg['info'] = "用户名长度必须在8个字符以内！";
+			} else if ( $hasusername ) {
+//				$this->error ( '该用户名已经存在，请重新填写用户名！' );
+				$msg['info'] = "该用户名已经存在，请重新填写用户名！";
 			}
 			/* 检测密码 */
-			if (strlen ( $password ) < 6 || strlen ( $password ) > 30) {
-				$this->error ( '密码长度必须在6-30个字符之间！' );
+			if (strlen ( $password ) < 6 || strlen ( $password ) > 8) {
+//				$this->error ( '密码长度必须在6-8个字符之间！' );
+				$msg['info'] = "密码长度必须在6-8个字符之间！";
 			}
 			if ($password != $repassword) {
-				$this->error ( '密码和重复密码不一致！' );
+//				$this->error ( '密码和重复密码不一致！' );
+				$msg['info'] = "密码和重复密码不一致！";
 			}
 			/* 测试手机号 */
 			// if (! preg_match ( '/^(13[0-9]|15[0|3|6|7|8|9]|18[8|9])\d{8}$/', $mobile )) {
 			// $this->error ( '手机格式不正确！' );
 			// }
-			if (empty($mobile)){
-			    $this->error('手机号码不能为空');
-			}
-			if (strlen ( $mobile ) != 11) {
-				$this->error ( '手机格式不正确！' );
-			}
+//			if (empty($mobile)){
+//			    $this->error('手机号码不能为空');
+//			}
+//			if (strlen ( $mobile ) != 11) {
+//				$this->error ( '手机格式不正确！' );
+//			}
+			
 			/* 测试联系人 */
-			if (empty ( $truename )) {
-				$this->error ( '联系人不能为空！' );
+			if (empty ( $nickname )) {
+//				$this->error ( '昵称不能为空！' );
+				$msg['info'] = "昵称不能为空！";
 			}
 			/* 测试邮箱 */
 			if (empty($email)){
-			    $this->error('邮箱不能为空');
+//			    $this->error('邮箱不能为空');
+				$msg['info'] = "邮箱不能为空！";
 			}
 			if (! preg_match ( '/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/', $email )) {
-				$this->error ( '邮箱格式不正确！' );
+//				$this->error ( '邮箱格式不正确！' );
+				$msg['info'] = "邮箱格式不正确！";
 			}
 			
 			/* 检测验证码 */
-			if (! check_verify ( $verify )) {
-				$this->error ( '验证码输入错误！' );
-			}
-			// CHECKOUT
-// 			$map ['code'] = I ( 'invite_code' );
-// 			if (empty ( $map ['code'] )) {
-// 				$this->error ( '内测码不能为空！' );
-// 			}
-// 			if (! M ( 'invite_code' )->where ( $map )->find ()) {
-// 				$this->error ( '内测码不正确！' );
-// 			}
+//			if (! check_verify ( $verify )) {
+//				$this->error ( '验证码输入错误！' );
+//			}
 			
 			/* 调用注册接口注册用户 */
-			$uid = D ( 'Common/User' )->register ( $username, $password, $email, $mobile, $truename );
+//			$uid = M ( 'User' )->register ( $username, $password, $email, $mobile, $nickname );
 			
-			if (0 < $uid) {
-				M ( 'invite_code' )->where ( $map )->delete ();
+			if ( $uid > 0 ) {
 				// 注册成功
-				// TODO: 发送验证邮件
-				// 关联默认可管理的公众号
-				$public = C ( 'DEFAULT_PUBLIC' );
-				$publicArr = array_filter ( explode ( ',', $public ) );
-				foreach ( $publicArr as $p ) {
-					$data ['uid'] = $uid;
-					$data ['mp_id'] = $p;
-					M ( 'public_link' )->add ( $data );
-				}
 				
-				// 自动加入公众号管理组
-				$access ['uid'] = $uid;
-				$access ['group_id'] = 3; // TODO 后续可优化为自动获取
-				M ( 'auth_group_access' )->add ( $access );
-				
-				// $this->success ( '注册成功，请登录', U ( 'login' ) );
 				$user ['uid'] = $uid;
 				$user ['username'] = $username;
 				
-				D ( 'Common/User' )->autoLogin ( $user );
-				$this->success ( '恭喜，注册成功！', U ( 'Home/Public/add', array('from'=>3) ) );
+				M ( 'User' )->autoLogin ( $user );
+				$msg['result'] = 1;
+				$msg['info'] = "恭喜，注册成功！";
+//				$this->success ( '恭喜，注册成功！', U ( 'Home/Public/add', array('from'=>3) ) );
 			} else { // 注册失败，显示错误信息
-				$this->error ( $this->showRegError ( $uid ) );
+//				$this->error ( $this->showRegError ( $uid ) );
+				$msg['info'] = $this->showRegError ( $uid );
 			}
-		} else { // 显示注册表单
-			$this->display ();
+		} else { // 返回错误提示
+			$msg['result'] = 0;
+			$msg['info'] = "参数错误！";
 		}
+		// 返回信息
+		echo json_encode($msg);
 	}
 	
 	/* 登录页面 */
@@ -158,6 +154,81 @@ class UserController extends HomeController {
 			$this->display ( $html );
 		}
 	}
+
+	/* 登录接口*/
+	public function loginCheck()
+    {
+        // 判断提交方式
+        if (IS_POST) {
+            // 实例化Login对象
+            $User = M('User');
+            // 自动验证 创建数据集
+			// create方法是对表单提交的POST数据进行自动验证，如果你的数据来源不是表单post
+			//$data = getData(); // 通过getData方法获取数据源的（数组）数据
+            if (!$data = $User->create()) {
+                // 防止输出中文乱码
+                header("Content-type: text/html; charset=utf-8");
+				// 如果创建失败 表示验证没有通过 输出错误提示信息
+                // exit($User->getError());
+				// 错误信息转换成json格式返回
+				$msg  = array(
+                    'info' => $User->getError()
+				); 
+				$this->ajaxReturn($msg);
+            }
+            // 组合查询条件
+            // $where = array();
+            // $where['username'] = $data['username'];
+			
+			$username = I('post.username','');
+			$psw    = I('post.password','');
+			$psw    = md5($psw);
+			
+			// 查询条件
+			$condition  = array(
+				'username'   => $username,
+				'password' => $psw
+			);
+			
+            // $result = $User->where($where)->field('userid,username,nickname,password,lastdate,lastip')->find();
+            $result = $User->where($condition )->find();
+			
+			// 验证用户名 对比 密码
+			// if ($result && $result['password'] == $result['password']) {
+            if ($result) {
+                // 存储session
+                session('userid', $result['userid']);          // 当前用户id
+                session('username', $result['username']);   // 当前用户名
+                // 更新用户登录信息
+				$info['lastip']  = get_client_ip();  // 更新登录ip
+				$info['lastdate'] = time(); //更新登录时间
+				
+				// 查询条件
+                $where['userid'] = session('userid'); 
+				
+                $User->where($where)->setInc('loginnum');   // 登录次数加 1
+                $User->where($where)->save($info);   // 更新登录时间和登录ip
+                // $this->success('登录成功,正跳转至系统首页...', U('Index/index'));
+				$msg = array(
+					'info' => 'ok',
+					'callback' => U('Admin/Index/index')
+				);
+            } else {
+                // $this->error('登录失败,用户名或密码不正确!');
+				$msg  = array(
+                    'info' => '用户名或密码不正确！'
+				);
+            }
+			
+        } else {// 判断提交方式
+			$msg = array(
+                'info' => '非法的请求方式'
+            );
+        }
+		// ajax返回信息提示
+		$this->ajaxReturn($msg);
+    }
+	
 	
 	/* 退出登录 */
 	public function logout() {

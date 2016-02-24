@@ -109,7 +109,9 @@ class UserController extends HomeController {
 			$msg['info'] = "参数错误！";
 		}
 		// 返回信息
-		echo json_encode($msg);
+//		echo json_encode($msg);
+		// ajax返回信息提示
+		$this->ajaxReturn($msg);
 	}
 	
 	/* 登录页面 */

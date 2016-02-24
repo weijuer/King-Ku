@@ -306,7 +306,8 @@ a, input,button,textarea{
 
 /*模态框*/
 .modal-dialog {
-	margin: 10% auto;
+	margin: 7% auto;
+	margin-bottom: 0;
 }
 .modal-title-bar {
 	border-bottom: 1px dashed #919191;

@@ -22,16 +22,37 @@ class UserController extends HomeController {
 	}
 	
 	/* 注册页面 */
-	public function register($username = '', $password = '', $repassword = '', $mobile = '', $nickname = '', $email = '', $verify = '') {
+	public function register() {
 //		if (! C ( 'USER_ALLOW_REGISTER' )) {
 //			$this->error ( '注册已关闭' );
 //		}
 
-		if (IS_POST) { // 注册用户
+		if (IS_POST) {
+			// 实例化User对象
+            $User = M('User');
+			// 自动验证 创建数据集
+			// create方法是对表单提交的POST数据进行自动验证，如果你的数据来源不是表单post
+			//$data = getData(); // 通过getData方法获取数据源的（数组）数据
+            if (!$data = $User->create()) {
+                // 防止输出中文乱码
+                header("Content-type: text/html; charset=utf-8");
+				// 如果创建失败 表示验证没有通过 输出错误提示信息
+                // exit($User->getError());
+				// 错误信息转换成json格式返回
+				$msg  = array(
+                    'info' => $User->getError()
+				); 
+//				$this->ajaxReturn($msg);
+            }
+		
+		
 			$username = trim ( $username );
 			$hasusername = M ( 'User' )->where ( array (
 					'username' => $username 
 			) )->getfield ( 'uid' );
+			
+			dump($username);
+			dump($hasusername);
 			
 			/* 测试用户名 */
 			if (empty ( $username )) {
@@ -90,20 +111,36 @@ class UserController extends HomeController {
 			/* 调用注册接口注册用户 */
 //			$uid = M ( 'User' )->register ( $username, $password, $email, $mobile, $nickname );
 			
-			if ( $uid > 0 ) {
-				// 注册成功
-				
-				$user ['uid'] = $uid;
-				$user ['username'] = $username;
-				
-				M ( 'User' )->autoLogin ( $user );
-				$msg['result'] = 1;
-				$msg['info'] = "恭喜，注册成功！";
-//				$this->success ( '恭喜，注册成功！', U ( 'Home/Public/add', array('from'=>3) ) );
-			} else { // 注册失败，显示错误信息
-//				$this->error ( $this->showRegError ( $uid ) );
-				$msg['info'] = $this->showRegError ( $uid );
-			}
+			//插入数据库
+            if ($id = $User->add($data)) {
+                /* 直接注册用户为超级管理员,子用户采用邀请注册的模式,
+              	*遂设置公司id等于注册用户id,便于管理公司用户*/
+                // $Muser->where("userid = $id")->setField('companyid', $id);
+				$msg = array(
+					'info' => '恭喜，注册成功！',
+					'callback' => U('Index/index')
+				);
+            } else {
+				$msg = array(
+					'info' => '注册失败！'
+				);
+            }
+			
+//			if ( $uid > 0 ) {
+//				// 注册成功
+//				
+//				$user ['uid'] = $uid;
+//				$user ['username'] = $username;
+//				
+//				M ( 'User' )->autoLogin ( $user );
+//				$msg['result'] = 1;
+//				$msg['info'] = "恭喜，注册成功！";
+////				$this->success ( '恭喜，注册成功！', U ( 'Home/Public/add', array('from'=>3) ) );
+//			} else { // 注册失败，显示错误信息
+////				$this->error ( $this->showRegError ( $uid ) );
+//				$msg['info'] = $this->showRegError ( $uid );
+//			}
+			
 		} else { // 返回错误提示
 			$msg['result'] = 0;
 			$msg['info'] = "参数错误！";
@@ -114,6 +151,51 @@ class UserController extends HomeController {
 		$this->ajaxReturn($msg);
 	}
 	
+	/* 注册接口*/
+	public function regCheck() {
+		if(IS_POST) {// 判断提交方式
+			// 实例化Login对象
+            $User = M('User');
+            // 自动验证 创建数据集
+			// create方法是对表单提交的POST数据进行自动验证，如果你的数据来源不是表单post
+			//$data = getData(); // 通过getData方法获取数据源的（数组）数据
+            if (!$data = $User->create()) {
+                // 防止输出中文乱码
+                header("Content-type: text/html; charset=utf-8");
+				// 如果创建失败 表示验证没有通过 输出错误提示信息
+                // exit($User->getError());
+				// 错误信息转换成json格式返回
+				$msg  = array(
+                    'info' => $User->getError()
+				); 
+				$this->ajaxReturn($msg);
+            }
+			
+			//插入数据库
+            if ($id = $User->add($data)) {
+                /* 直接注册用户为超级管理员,子用户采用邀请注册的模式,
+              	*遂设置公司id等于注册用户id,便于管理公司用户*/
+                // $Muser->where("userid = $id")->setField('companyid', $id);
+				$msg = array(
+					'info' => 'ok',
+					'callback' => U('Index/index')
+				);
+            } else {
+				$msg = array(
+					'info' => '注册失败！'
+				);
+            }
+			
+		}else {
+			$msg = array(
+                'info' => '非法的请求方式'
+            );
+        }
+		// ajax返回信息提示
+		$this->ajaxReturn($msg);
+	}
+	
+
 	/* 登录页面 */
 	public function login($username = '', $password = '', $verify = '') {
 		if (IS_POST) { // 登录验证
@@ -158,8 +240,7 @@ class UserController extends HomeController {
 	}
 
 	/* 登录接口*/
-	public function loginCheck()
-    {
+	public function loginCheck() {
         // 判断提交方式
         if (IS_POST) {
             // 实例化Login对象
@@ -193,7 +274,7 @@ class UserController extends HomeController {
 			);
 			
             // $result = $User->where($where)->field('userid,username,nickname,password,lastdate,lastip')->find();
-            $result = $User->where($condition )->find();
+            $result = $User->where( $condition )->find();
 			
 			// 验证用户名 对比 密码
 			// if ($result && $result['password'] == $result['password']) {
@@ -209,7 +290,7 @@ class UserController extends HomeController {
                 $where['userid'] = session('userid'); 
 				
                 $User->where($where)->setInc('loginnum');   // 登录次数加 1
-                $User->where($where)->save($info);   // 更新登录时间和登录ip
+                $User->where($where)->save( $info );   // 更新登录时间和登录ip
                 // $this->success('登录成功,正跳转至系统首页...', U('Index/index'));
 				$msg = array(
 					'info' => 'ok',

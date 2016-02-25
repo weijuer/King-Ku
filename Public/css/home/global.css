@@ -325,7 +325,7 @@ a, input,button,textarea{
 	border: 1px solid #CCCCCC;
 	margin-bottom: 0.5em;
 }
-#acceptTerms-error {
+#agree-error {
 	position: absolute;
 	left: 9em;
 }

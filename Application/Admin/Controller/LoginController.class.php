@@ -179,8 +179,7 @@ class LoginController extends Controller {
     /**
      * 验证码
      */
-    public function verify()
-    {
+    public function verify() {
         // 实例化Verify对象
         $verify = new \Think\Verify();
         // 配置验证码参数

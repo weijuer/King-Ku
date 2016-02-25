@@ -14,9 +14,9 @@ return array(
 //	'TMPL_ACTION_ERROR' => 'Public:404',
 
 	// 显示页面Trace信息
-//	'SHOW_PAGE_TRACE' =>true, 
+	'SHOW_PAGE_TRACE' =>true, 
 	
-	'TMPL_PARSE_STRING'  =>array(
+//	'TMPL_PARSE_STRING'  =>array(
 //	     '__PUBLIC__' => '/Common', // 更改默认的/Public 替换规则
 //		 '__JS__'     => '/Public/JS/', // 增加新的JS类库路径替换规则
 //		 '__UPLOAD__' => '/Uploads', // 增加新的上传路径替换规则
@@ -27,7 +27,7 @@ return array(
 //		 '__ACTION__'：会替换成当前操作的URL地址 （不含域名）
 //		 '__SELF__' =>  //会替换成当前的页面URL
 //		 '__PUBLIC__' =>  //会被替换成当前网站的公共目录 通常是 /Public/
-	),
+//	),
 	
 	// 添加数据库配置信息 支持数组、字符串以及调用配置参数三种格式
 	//1、字符串定义

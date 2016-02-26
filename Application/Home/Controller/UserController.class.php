@@ -153,6 +153,9 @@ class UserController extends HomeController {
 	
 	/* 注册接口*/
 	public function regCheck() {
+		// 防止输出中文乱码
+		header("Content-type: text/html; charset=utf-8");
+		
 		if(IS_POST) {// 判断提交方式
 			// 实例化Login对象
             $User = M('User');
@@ -168,7 +171,8 @@ class UserController extends HomeController {
 				$msg  = array(
                     'info' => $User->getError()
 				); 
-				$this->ajaxReturn($msg);
+//				$this->ajaxReturn($msg);
+				
             }
 			
 			//插入数据库
@@ -191,8 +195,12 @@ class UserController extends HomeController {
                 'info' => '非法的请求方式'
             );
         }
+		
 		// ajax返回信息提示
-		$this->ajaxReturn($msg);
+//		$this->ajaxReturn($msg);
+//		echo json_encode($msg);
+		dump($msg);
+		trace($msg,"调试");
 	}
 	
 

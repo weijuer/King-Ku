@@ -6,15 +6,19 @@ return array(
 	
 	'URL_HTML_SUFFIX' => 'shtml', //URL伪静态设置	
 	
-//	'ERROR_PAGE' => '/404.html', //404 页面设置
+	'ERROR_PAGE' => '/Public/static/404.html', //404 页面设置
 
 //	'URL_404_REDIRECT'      =>  '', // 404 跳转页面 部署模式有效
 
 	//默认错误跳转对应的模板文件
 //	'TMPL_ACTION_ERROR' => 'Public:404',
 
-	// 显示页面Trace信息
-	'SHOW_PAGE_TRACE' =>true, 
+	
+	'SHOW_PAGE_TRACE' => true, // 显示页面Trace信息
+	
+//	'SHOW_ERROR_MSG'  =>  true,    // 显示错误信息
+	
+//	'ERROR_MESSAGE'  =>    '发生错误！' // 如果'SHOW_ERROR_MSG'设置为false，则默认显示该说明文字
 	
 //	'TMPL_PARSE_STRING'  =>array(
 //	     '__PUBLIC__' => '/Common', // 更改默认的/Public 替换规则

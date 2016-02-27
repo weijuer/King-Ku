@@ -1,8 +1,8 @@
 <?php
-namespace Admin\Model;
+namespace Home\Model;
 use Think\Model;
 
-class MusersModel extends Model {
+class UserModel extends Model {
     /**
      * 自动验证
      * self::EXISTS_VALIDATE 或者0 存在字段就验证（默认）

@@ -35,7 +35,7 @@ class UserModel extends Model {
      */
     protected function is_agree() {
         // 获取POST数据
-        $agree = I('post.agree', 0, 'intval');
+        $agree = I('post.agree', 0);
         // 验证
         if ($agree) {
             return true;

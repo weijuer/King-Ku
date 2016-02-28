@@ -157,8 +157,9 @@ class UserController extends HomeController {
 		header("Content-type: text/html; charset=utf-8");
 		
 		if(IS_POST) {// 判断提交方式
+		
 			// 实例化Login对象
-            $User = M('User');
+            $User = D('User'); // 静态定义方式因为必须定义模型类，所以只能用D函数实例化模型
             // 自动验证 创建数据集
 			// create方法是对表单提交的POST数据进行自动验证，如果你的数据来源不是表单post
 			//$data = getData(); // 通过getData方法获取数据源的（数组）数据
@@ -166,13 +167,12 @@ class UserController extends HomeController {
                 // 防止输出中文乱码
                 header("Content-type: text/html; charset=utf-8");
 				// 如果创建失败 表示验证没有通过 输出错误提示信息
-                // exit($User->getError());
 				// 错误信息转换成json格式返回
 				$msg  = array(
                     'info' => $User->getError()
-				); 
-//				$this->ajaxReturn($msg);
-				
+				);
+				 
+				$this->ajaxReturn($msg);
             }
 			
 			//插入数据库
@@ -197,12 +197,12 @@ class UserController extends HomeController {
         }
 		
 		// ajax返回信息提示
-//		$this->ajaxReturn($msg);
+		$this->ajaxReturn($msg);
 //		echo json_encode($msg);
-		dump($msg);
-		trace($msg,"调试");
+//		dump($msg);
+//		trace($msg,"调试");
 	}
-	
+
 
 	/* 登录页面 */
 	public function login($username = '', $password = '', $verify = '') {
@@ -426,4 +426,5 @@ class UserController extends HomeController {
 			$this->display ();
 		}
 	}
+	
 }

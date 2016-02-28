@@ -115,6 +115,9 @@
 			
 			// 注册分布验证
 			var form = $("#regForm");
+			var params=$("#regForm").serialize();
+			var regurl = "User/regCheck";
+			var flag =false;
 			form.validate({
 				errorPlacement:function(error,element) {element.before(error);},
 				rules:{ 
@@ -135,7 +138,30 @@
 						$(".body:eq("+newIndex+") .error",form).removeClass("error")
 					}
 					form.validate().settings.ignore=":disabled,:hidden";
-					return form.valid();
+//					return form.valid();
+					
+					$.post(regurl,params,function(msg){
+						if(msg.info == 'ok'){
+							//注册成功后跳到登录页面，否则直接进入首页
+							layer.msg("注册成功，正在加载...", {icon: 16});
+							setTimeout(function(){
+								window.location.href = msg.callback;
+							}, 2000);
+						}else {
+							// errorMsg(msg.info);
+							//正上方
+							layer.msg(msg.info, {
+								offset: ['220px', '45%'],
+								shift: 6
+							});
+							
+							flag = true;
+						}
+					});
+					
+					if(form.valid() && flag){
+						return false;
+					}
 				},
 				onStepChanged: function(event,currentIndex,priorIndex) {
 					if(currentIndex===2 && Number($("#age").val()) >= 18){
@@ -144,6 +170,7 @@
 					if(currentIndex===2 && priorIndex===3){
 						$(this).steps("previous");
 					}
+					
 				},
 				onFinishing: function(event,currentIndex) {
 					form.validate().settings.ignore=":disabled";
@@ -151,9 +178,7 @@
 				},
 				onFinished:function(event,currentIndex) {
 //					form.submit();
-					var params=$("#regForm").serialize();
-					var url = "User/regCheck";
-					$.post(url,params,function(msg){
+					$.post(regurl,params,function(msg){
 						if(msg.info == 'ok'){
 							//注册成功后跳到登录页面，否则直接进入首页
 							layer.msg("注册成功，正在加载...", {icon: 16});

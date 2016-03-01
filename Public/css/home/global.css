@@ -228,6 +228,15 @@ a, input,button,textarea{
 	border: 1px solid #CCCCCC;
 }
 
+.user-head-pic {
+    width: 3em;
+    position: absolute;
+    top: 2px;
+}
+.user-head-btn {
+	margin-left: 4em;
+	padding: 0!important;
+}
 
 /* 主体内容 */
 .container {

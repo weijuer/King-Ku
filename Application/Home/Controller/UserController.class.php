@@ -288,7 +288,7 @@ class UserController extends HomeController {
 			// if ($result && $result['password'] == $result['password']) {
             if ($result) {
                 // 存储session
-                session('userid', $result['userid']);          // 当前用户id
+                session('uid', $result['uid']);          // 当前用户id
                 session('username', $result['username']);   // 当前用户名
                 
                 // 存储cookie
@@ -299,7 +299,7 @@ class UserController extends HomeController {
 				$info['lastdate'] = time(); //更新登录时间
 				
 				// 查询条件
-                $where['userid'] = session('userid'); 
+                $where['uid'] = session('uid'); 
 				
                 $User->where($where)->setInc('loginnum');   // 登录次数加 1
                 $User->where($where)->save( $info );   // 更新登录时间和登录ip

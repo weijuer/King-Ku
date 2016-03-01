@@ -290,6 +290,10 @@ class UserController extends HomeController {
                 // 存储session
                 session('userid', $result['userid']);          // 当前用户id
                 session('username', $result['username']);   // 当前用户名
+                
+                // 存储cookie
+                cookie('username',$result['username']);  //设置cookie
+                
                 // 更新用户登录信息
 				$info['lastip']  = get_client_ip();  // 更新登录ip
 				$info['lastdate'] = time(); //更新登录时间
@@ -323,17 +327,14 @@ class UserController extends HomeController {
 	
 	/* 退出登录 */
 	public function logout() {
-		if (is_login ()) {
-			D ( 'Common/User' )->logout ();
+		if ( is_login () ) {
+			// 清除所有session 和cookie
+        	session(null);
+			cookie(null);
 			
-			if (isset ( $_GET ['no_tips'] )) {
-				$this->redirect ( 'User/login' );
-			}
-			$this->redirect ( 'User/login' );
+			$this->redirect ( '/' ); // 刷新当前页面
 			// $this->success ( '退出成功！', U ( 'User/login' ) );
-		} else {
-			$this->redirect ( 'User/login' );
-		}
+		} 
 	}
 	
 	/* 验证码，用于登录和注册 */

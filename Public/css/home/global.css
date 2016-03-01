@@ -203,13 +203,13 @@ a, input,button,textarea{
 .user-login-box {
 	float: left;
 }
-.user-login-box li {
+.user-login-box > li {
 	float: left;
 	display: inline-block;
 	line-height: 1.5rem;
 	position: relative;
 }
-.user-login-box li a {
+.user-login-box > li > a {
 	display: block;
 	padding: 1rem 1rem;
 	color: #AAAAAA;
@@ -236,6 +236,14 @@ a, input,button,textarea{
 .user-head-btn {
 	margin-left: 4em;
 	padding: 0!important;
+	display: block;
+	height: 45px;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #55BB54;
 }
 
 /* 主体内容 */

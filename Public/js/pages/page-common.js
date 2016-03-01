@@ -95,7 +95,7 @@ $(function() {
 	
 	// 注册分布验证
 	var form = $("#regForm");
-	var regurl = "User/regCheck";
+	var regurl = "/User/regCheck";
 	var flag =false;
 	var e = "<i class='fa fa-times-circle'></i> ";
 	form.validate({
@@ -251,7 +251,7 @@ $(function() {
 		}
 		
 		var params=$("#LoginForm").serialize();
-		var url = "User/loginCheck";
+		var url = "/User/loginCheck";
 		$.post(url,params,function( msg ) {
 			if(msg.info == 'ok'){
 				//登录后跳到登录页面，否则直接进入首页

@@ -37,7 +37,7 @@ class UserModel extends Model {
         // 获取POST数据
         $agree = I('post.agree', 0);
         // 验证
-        if ($agree) {
+        if ($agree == "on") {
             return true;
         } else {
             return false;

@@ -182,7 +182,7 @@ class UserController extends HomeController {
                 // $Muser->where("userid = $id")->setField('companyid', $id);
 				$msg = array(
 					'info' => 'ok',
-					'callback' => U('Index/index')
+					'callback' => U('/')
 				);
             } else {
 				$msg = array(
@@ -302,7 +302,7 @@ class UserController extends HomeController {
                 // $this->success('登录成功,正跳转至系统首页...', U('Index/index'));
 				$msg = array(
 					'info' => 'ok',
-					'callback' => U('Admin/Index/index')
+					'callback' => U('/')
 				);
             } else {
                 // $this->error('登录失败,用户名或密码不正确!');

@@ -269,27 +269,28 @@
 																</div>
 																
 																<!-- 发表评论 -->
-																<if condition="$userid neq ''">
-																<div class="social-comment add-comment">
-																	<a href="" class="pull-left">
-																		<img class="img-circle" alt="image" src="__PUBLIC__/img/a3.jpg">
-																	</a>
-																	<form id="commentForm" method="post" action="" role="form">
-																		<!-- 隐藏用户ID信息 -->
-																		<div class="user-comment-id">
-																			<input type="hidden" value="{$user.uid}" />
-																		</div>
-																		<div class="media-body">
-																			<textarea class="form-control" placeholder="填写评论..."></textarea>
-																		</div>
-																		
-																		<div class="text-right btn-above">
-																			<button type="submit" class="btn btn-xs btn-primary"><strong>发布</strong>
-																			</button>
-																		</div>
-																	</form>
-																</div>
+																<if condition="$Think.session.username neq '' ">
+																	<div class="social-comment add-comment">
+																		<a href="" class="pull-left">
+																			<img class="img-circle" alt="image" src="__PUBLIC__/img/a3.jpg">
+																		</a>
+																		<form id="commentForm" method="post" action="" role="form">
+																			<!-- 隐藏用户ID信息 -->
+																			<div class="user-comment-id">
+																				<input type="hidden" value="{$user.uid}" />
+																			</div>
+																			<div class="media-body">
+																				<textarea class="form-control" placeholder="填写评论..."></textarea>
+																			</div>
+																			
+																			<div class="text-right btn-above">
+																				<button type="submit" class="btn btn-xs btn-primary"><strong>发布</strong>
+																				</button>
+																			</div>
+																		</form>
+																	</div>
 																</if>
+																
 															</div>
 														</div>
 													</div>

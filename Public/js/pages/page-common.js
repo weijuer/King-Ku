@@ -270,6 +270,35 @@ $(function() {
 	});	
 	
 	
+	// 修改头像，修改个人信息
+	$(".reset-user-head").on("click",function(){
+		//页面层
+		var html =  '<form class="form-horizontal m-t" id="userHeadForm" method="post" action="__URL__/userHeadUpload" enctype="multipart/form-data" novalidate="novalidate">'
+						+'<div class="userHead-group">'
+//							+'<label class="col-sm-3 control-label">头像上传：</label>'
+							+'<div class="check-box userHead-box">'
+								+'<input id="userHead" class="form-control" name="poster" type="file" data-upload-url="__URL__/userHeadUpload" />'
+							+'</div>'
+						+'</div>'
+					+'</form>';
+		layer.open({
+		    type: 1,
+		    title: '修改头像',
+//		    skin: 'layui-layer-rim', //加上边框
+		    area: ['450px', '450px'], //宽高
+		    content: html
+		});
+		
+		// 图片上传组件配置						
+		$("#userHead").fileinput({
+			language : 'zh',
+			allowedFileTypes : [ 'image' ],
+			allowedFileExtensions : [ 'jpg', 'png', 'gif' ],
+			maxFileSize : 2000
+		});
+		
+	});
+	
 	// 百度自动推送
 //		(function(){
 //			var bp = document.createElement('script');

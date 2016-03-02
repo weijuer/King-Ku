@@ -246,6 +246,11 @@ a, input,button,textarea{
 	background-color: #55BB54;
 }
 
+.userHead-group {
+    margin: auto 1em;
+}
+
+
 /* 主体内容 */
 .container {
 	padding: 0;

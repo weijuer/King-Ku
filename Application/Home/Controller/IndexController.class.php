@@ -148,11 +148,12 @@ class IndexController extends HomeController {
 
 	
 	// 单条电影数据
-	public function videoDetail($vid=0) {
+	public function videoDetail($vid = 0, $uid = 0) {
 		// 实例化Videos对象
 		$Videos   =   M('Videos');
 		// 获取前台ID
 		$vid = I('get.vid');
+		$uid = I('from_uid');
 		$videoList = $Videos->find($vid);
 		
 		$videoList['kind'] = explode(',', $videoList['kind']); //前台电影类型转数组
@@ -171,6 +172,15 @@ class IndexController extends HomeController {
 		
 		//下拉选框数组列表赋值
 		$this->assign('arrList',$array);
+		
+		// 调用评论查询
+		$Comment = M("Comment");		
+		$comList = $Comment->alias('c')->join('weijuer_user u ON u.uid = c.uid')
+		->limit(10)->field('username,add_time,content,like_sum')->select();
+		
+//		dump($comList);
+		
+		$this->assign('comList',$comList); // 赋值评论列表数据集
 		
 		// 使用layout控制模板布局
 		layout('Layout/layout');

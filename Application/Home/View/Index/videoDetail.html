@@ -166,9 +166,9 @@
 														</foreach>
 													</dd>
 												<dt>最后更新：</dt>
-													<dd>{$videoList.lastdate|date="Y年 m月d日 H:m",###}</dd>
+													<dd>{$videoList.lastdate|date="Y年 m月d日 H:i",###}</dd>
 												<dt>创建时间：</dt>
-													<dd>{$videoList.regdate|date="Y年 m月d日 H:m",###}</dd>
+													<dd>{$videoList.regdate|date="Y年 m月d日 H:i",###}</dd>
 												<dt>最近关注：</dt>
 												<dd class="project-people">
 													<a href="project_detail.html">
@@ -206,7 +206,7 @@
 											</a>
 											<div class="media-body">
 												<a href="#">{$video.user}</a>
-												<small class="text-muted">{$video.lastdate|date="Y年 m月d日 H:m",###}</small>
+												<small class="text-muted">{$video.lastdate|date="Y年 m月d日 H:i",###}</small>
 											</div>
 										</div>-->
 										
@@ -248,25 +248,26 @@
 															<div class="social-comment-list">
 															
 																<!-- 评论列表项 -->
-																<div class="social-comment">
-																	<a href="" class="pull-left">
-																		<img alt="image" class="img-circle" src="__PUBLIC__/img/a1.jpg">
-																	</a>
-																	<div class="media-body">
-																		<a href="#" class="text-info">小秘书</a> 
-																		<p>基本做到了全程无尿点，值得一看</p>
-																		<p>
-																			<span class="small"><i class="fa fa-thumbs-up"></i> 26</span>
-																			<small class="text-muted">8月18日</small>
-																		</p>
-																		<div class="actions">
-																			<a class="btn btn-xs btn-info"><i class="fa fa-thumbs-up"></i> 赞 </a>
-																			<a class="btn btn-xs btn-danger"><i class="fa fa-heart"></i> 收藏</a>
-																			<a class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> 回复</a>
+																<foreach name="comList" item="vo">
+																	<div class="social-comment">
+																		<a href="" class="pull-left">
+																			<img alt="image" class="img-circle" src="__PUBLIC__/img/a1.jpg">
+																		</a>
+																		<div class="media-body">
+																			<a href="#" class="text-info">{$vo.username}</a> 
+																			<p>{$vo.content}</p>
+																			<p>
+																				<span class="small"><i class="fa fa-thumbs-up"></i> {$vo.like_sum}</span>
+																				<small class="text-muted">{$vo.add_time|date="Y年m月d日 H:i",###}</small>
+																			</p>
+																			<div class="actions">
+																				<a class="btn btn-xs btn-info"><i class="fa fa-thumbs-up"></i> 赞 </a>
+																				<a class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> 回复</a>
+																			</div>
+																			
 																		</div>
-																		
 																	</div>
-																</div>
+																</foreach>
 																
 																<!-- 发表评论 -->
 																<if condition="$Think.session.username neq '' ">
@@ -274,17 +275,20 @@
 																		<a href="" class="pull-left">
 																			<img class="img-circle" alt="image" src="__PUBLIC__/img/a3.jpg">
 																		</a>
-																		<form id="commentForm" method="post" action="" role="form">
+																		<form id="commentForm" method="post" action="/Comment/addComment" role="form">
 																			<!-- 隐藏用户ID信息 -->
 																			<div class="user-comment-id">
-																				<input type="hidden" value="{$user.uid}" />
+																				<input type="hidden" name="uid" value="{$Think.session.uid}" />
+																				<input type="hidden" name="reference_vid" value="{$videoList.vid}" />
+																				<input type="hidden" name="type" value="3" />
 																			</div>
+																			
 																			<div class="media-body">
-																				<textarea class="form-control" placeholder="填写评论..."></textarea>
+																				<textarea class="form-control" name="content" maxlength="30" placeholder="填写评论..."></textarea>
 																			</div>
 																			
 																			<div class="text-right btn-above">
-																				<button type="submit" class="btn btn-xs btn-primary"><strong>发布</strong>
+																				<button type="button" class="btn btn-xs btn-primary book-btn"><strong>发表</strong>
 																				</button>
 																			</div>
 																		</form>
@@ -320,4 +324,42 @@
 				<!-- 右侧资源信息结束 -->
 		    </div>
 			<!--页面内容结束-->
+			</block>
+			
+			<block name="page-js">
+			<script>	
+				$(function(){
+					$(".book-btn").on("click",function(){
+						var val = $("#commentForm textarea").val();
+						if( isNull(val) ){
+							//正上方
+							layer.msg("当前评论内容不能为空！", {
+								offset: ['220px', '45%'],
+								shift: 6
+							});
+							return;
+						}
+						
+						var params=$("#commentForm").serialize();
+						var url = "/Comment/addComment";
+						$.post(url,params,function( msg ) {
+							
+							if(msg.info == 'ok'){
+								//登录后跳到登录页面，否则直接进入首页
+								layer.msg("评论成功，正在加载...", {icon: 16});
+								setTimeout(function(){
+								// window.location.href = msg.callback;
+									window.location.reload(); // 评论成功，刷新当前页面
+								}, 2000);
+							}else {
+								//正上方
+								layer.msg(msg.info, {
+									offset: ['220px', '45%'],
+									shift: 6
+								});
+							}
+						});
+					});
+				});
+			</script>	
 			</block>

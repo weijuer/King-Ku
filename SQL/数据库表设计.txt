@@ -1,4 +1,20 @@
 ﻿-- ------------------------------------
+-- Table structure for weijuer_contrast 参数对照表结构
+-- ------------------------------------
+
+DROP TABLE IF EXISTS `weijuer_contrast`;
+CREATE TABLE `weijuer_contrast` (
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `list_name` char(20) NOT NULL DEFAULT '' COMMENT '列表名称',
+	`abbr` char(20) NOT NULL DEFAULT '' COMMENT '缩写',	
+  `content` char(55) NOT NULL DEFAULT '' COMMENT '替代内容',
+  `add_time` datetime DEFAULT NULL COMMENT '发布时间',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+
+-- ------------------------------------
 -- Table structure for weijuer_comment 评论表结构
 -- ------------------------------------
 
@@ -11,7 +27,9 @@ CREATE TABLE `weijuer_comment` (
   `from_uid` mediumint(8) unsigned NOT NULL COMMENT '引用用户id',
   `type` varchar(2) NOT NULL DEFAULT '' COMMENT '1、转发2、点赞3、评论',
   `content` varchar(255) NOT NULL DEFAULT '' COMMENT '发布内容',
-  `add_time` datetime DEFAULT NULL COMMENT '发布时间',
+  `add_time` int(14) unsigned NOT NULL COMMENT '创建时间',
+	`regip` char(15) NOT NULL DEFAULT '' COMMENT '创建ip',	
+	`like_sum` mediumint(8) unsigned NOT NULL COMMENT '该条评论点赞数',
   `is_reply` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '回复状态-0.未回复、1.已回复',
   PRIMARY KEY (`cid`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

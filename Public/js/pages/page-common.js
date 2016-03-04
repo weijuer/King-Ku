@@ -257,7 +257,8 @@ $(function() {
 				//登录后跳到登录页面，否则直接进入首页
 				layer.msg("登录成功，正在加载...", {icon: 16});
 				setTimeout(function(){
-					window.location.href = msg.callback;
+				// window.location.href = msg.callback;
+					window.location.reload(); // 登录成功，刷新当前页面
 				}, 2000);
 			}else {
 				//正上方

@@ -40,7 +40,7 @@ class HomeController extends Controller {
 	protected function login(){
 		/* 用户登录检测 */
 		if( is_login() ){
-		    $this->error('您还没有登录，请先登录！', U('Login/login'), 3);
+		    $this->error('您还没有登录，请先登录！', U('admin/Login/login'), 3);
 		}
 	}
 

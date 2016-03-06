@@ -72,7 +72,7 @@ class CommentController extends HomeController {
 				$this->ajaxReturn($msg);
             }
 			
-			$data['reference_vid'] = I('vid'); //获取vid
+//			$data['reference_vid'] = I('vid'); //获取vid
 			
 //			dump($data['reference_vid']);
 			

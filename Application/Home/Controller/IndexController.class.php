@@ -173,10 +173,12 @@ class IndexController extends HomeController {
 		//下拉选框数组列表赋值
 		$this->assign('arrList',$array);
 		
+		$map['reference_vid'] = I('get.vid'); // 根据vid查询条件
+		
 		// 调用评论查询
 		$Comment = M("Comment");		
 		$comList = $Comment->alias('c')->join('weijuer_user u ON u.uid = c.uid')
-		->limit(10)->field('username,add_time,content,like_sum')->select();
+		->limit(10)->where($map)->field('username,add_time,content,like_sum')->select();
 		
 //		dump($comList);
 		

@@ -29,12 +29,41 @@ a, input,button,textarea{
     -webkit-tap-highlight-color: transparent;
 }
 
+/* 一般页面公共样式 */
+html{
+	font-family:"微软雅黑";
+	font-size: 62.5%; /* 10÷16=62.5% */
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-size: 12px;
+	font-size: 1.2rem; /* 12÷10=1.2 */
+	width: 100%;
+	height: 100%;
+	background: #F8F8F8;
+} /* =12px */
+
+h3{
+	font-size: 30px;
+	font-size: 2.5rem; 
+} /* =30px */
+
+p{
+	font-size:14px;
+	font-size:1.4rem;
+}
+
+/*自定义滚动条*/
+
+
 
 /* 顶部菜单栏 */
 .page-header {
-	margin: 0;
-	padding: 0;
-	border-bottom: 0;
+    height: 46px;
+    width: 950px;
+    margin: 0 auto;
 }
 
 .logo {
@@ -257,12 +286,22 @@ a, input,button,textarea{
 	margin: 0;
 }
 
-.content {
-	margin-top: 5rem;
+.container {
+    width: 100%;
+    margin: 0 auto;
+	height: calc(100% - 86px);
+    overflow: auto;
+    font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.2rem;
 }
 
-.content-body {	
-	margin: 2rem 14rem;
+.content {
+	width: 950px;
+	margin: 0 auto;
+}
+
+.content-body {
+    margin-bottom: 2em;	
 }
 
 .tabs-container {
@@ -527,6 +566,7 @@ dd, dt {
 
 .video-list-box {
 	padding: 0.5rem 0;
+    text-align: justify;
 	border-bottom: 1px solid #CCCCCC;
 }
 .video-list {
@@ -534,45 +574,16 @@ dd, dt {
 }
 .video-list li {
 	display: inline-block;
+	line-height: 2em;
 }
 .file a {
 	display: block;
 }
 
-/* 一般页面公共样式 */
-html{
-	font-family:"微软雅黑";
-	font-size: 62.5%; /* 10÷16=62.5% */
-	width: 100%;
-	height: 100%;
+.tag-list {
+	text-align: justify;
 }
 
-body {
-	font-size: 12px;
-	font-size: 1.2rem; /* 12÷10=1.2 */
-	width: 100%;
-	height: 100%;
-	background: #F8F8F8;
-} /* =12px */
-
-h3{
-	font-size: 30px;
-	font-size: 2.5rem; 
-} /* =30px */
-
-p{
-	font-size:14px;
-	font-size:1.4rem;
-}
-
-.container {
-	width: 100%;
-	/*margin-top: 45px;*/
-	height: calc(100% - 40px);
-	overflow: auto;
-	font-family: "微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 1.2rem;
-}
 
 .file-addtime {
 	color: #676a6c;

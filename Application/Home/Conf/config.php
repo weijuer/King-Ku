@@ -7,9 +7,9 @@ return array(
 	// 配置路由规则
 	'URL_ROUTE_RULES' => array( //定义路由规则
 //		'videoDetail/:vid\d'  => array('index/videoDetail',array('ext'=>'shtml')),
-		'videoDetail/:vid\d'  => 'index/videoDetail',
-		'videoList'  => 'index/videoList',
-		'movieList'  => 'index/movieList',
+		'videoDetail/:vid\d'  => 'Video/videoDetail',
+		'videoList'  => 'Video/videoList',
+		'movieList'  => 'Video/movieList',
 	),
 	
 	

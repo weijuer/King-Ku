@@ -1,0 +1,365 @@
+			<extend name="Base/common"/>
+			<block name="site-title"><title>朕乐视频-资源详情《{$videoList.videoname|default="资源详情"}》</title></block>
+			
+			<block name="body">
+			<!--页面内容开始-->
+		    <div class="row content-body">
+			
+				<!-- 左侧资源信息结束 -->
+		        <div class="col-sm-3">
+		            <div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5>资源档案</h5>
+						</div>
+						<div class="ibox-content video-info-right">
+							<!-- 用户头像 -->
+							<div class="img-box user-head">
+								<img src="__PUBLIC__/img/default-head.png" class="img-circle" style="width: 70px;">
+							</div>
+							<!-- 更新信息 -->
+							<div class="video-info-user">
+								<p class="small">
+									<span class="font-bold"><i class="fa fa-user"></i> 发布者：</span>
+									<a href="#" class="text-navy">{$videoList.user}</a>							
+								</p>
+								<p class="small">
+									<span class="font-bold"><i class="fa fa-clock-o"></i> 发布时间：</span>							
+									<small class="text-muted">{$videoList.regdate|date="Y-m-d H:m",###}</small>						
+								</p>
+								<p class="small">
+									<span class="font-bold"><i class="fa fa-clock-o"></i> 最后更新：</span>							
+									<small class="text-muted">{$videoList.lastdate|date="Y-m-d H:m",###}</small>						
+								</p>
+							</div>
+							
+							<!-- 其他下载信息 -->
+							<h5>相关标签</h5>
+							<ul class="tag-list" style="padding: 0;display: inline-block;">
+								<li><a href="javascript:void(0);"><i class="fa fa-tag"></i> 文档</a>
+								</li>
+								<li><a href="javascript:void(0);"><i class="fa fa-tag"></i> 分享</a>
+								</li>
+								<li><a href="javascript:void(0);"><i class="fa fa-tag"></i> 下载</a>
+								</li>
+							</ul>
+							<h5>资源明细</h5>
+							<ul class="list-unstyled project-files">
+								<li><a href="javascript:void(0);"><i class="fa fa-file"></i> Project_document.docx</a>
+								</li>
+								<li><a href="javascript:void(0);"><i class="fa fa-file-picture-o"></i> Logo_zender_company.jpg</a>
+								</li>
+								<li><a href="javascript:void(0);"><i class="fa fa-stack-exchange"></i> Email_from_Alex.mln</a>
+								</li>
+								<li><a href="javascript:void(0);"><i class="fa fa-file"></i> Contract_20_11_2014.docx</a>
+								</li>
+							</ul>
+							
+							<div class="row m-t-sm user-button">
+								<div class="col-sm-6">
+									<a href="{$videoList.link}" download class="btn btn-sm btn-primary">立即下载</a>
+								</div>
+								<div class="col-sm-6">
+									<a href="{:U('Home/Index/videoPlayer')}" class="btn btn-sm btn-primary">立即播放</a>
+								</div>
+							</div>
+						</div>
+		            </div>
+		        </div>
+				<!-- 左侧资源信息结束 -->
+				
+			
+				<!-- 右侧资源信息开始 -->
+		        <div class="col-sm-9">
+		            <div class="ibox float-e-margins">
+						<div class="ibox-title">
+							<h5 class="posTag">资源详情</h5>
+							<a href="javascript:history.back();" class="btn btn-primary btn-xs pull-right">返回</a>
+						</div>
+						
+						<div class="ibox-content video-info-box">
+							
+							<!-- 资源详情 -->
+							<div class="row video-info-header">
+							
+								<div class="col-sm-3 img-box">
+									<img alt="image" class="img-head" src="__PUBLIC__/images/poster/{$videoList.poster}">
+									<div class="btn-group">
+										<button class="btn btn-white btn-xs"><i class="fa fa-thumbs-up"></i> 赞</button>
+										<button class="btn btn-white btn-xs"><i class="fa fa-comments"></i> 评论</button>
+										<button class="btn btn-white btn-xs"><i class="fa fa-share"></i> 分享</button>
+									</div>
+								</div>
+								
+								<!-- 资源信息详情上部信息 -->
+								<div class="col-sm-9">
+									<div class="row video-details">
+										<div class="col-sm-12">
+											<div class="video-name">
+												<h2>{$videoList.videoname}</h2>
+											</div>
+										</div>
+										
+										<!-- 资源信息详情左侧信息 -->
+										<div class="col-sm-5">
+		
+											<dl class="dl-horizontal">
+												<dt>年代：</dt>
+													<dd>
+														<foreach name="arrList['ageList']" item="list_vo" key="list_key">													
+															<if condition="$videoList.age eq $list_key "> 
+																<span class="">{$list_vo}</span>
+															</if>																			
+														</foreach>
+													</dd>
+																						
+												<dt>地区：</dt>
+													<dd>
+														<foreach name="arrList['regionList']" item="list_vo" key="list_key">													
+															<if condition="$videoList.region eq $list_key "> 
+																<span class="">{$list_vo}</span>
+															</if>																			
+														</foreach>
+													</dd>	
+												<dt>语言：</dt>
+													<dd>
+														<foreach name="arrList['langList']" item="list_vo" key="list_key">													
+															<if condition="$videoList.lang eq $list_key "> 
+																<span class="">{$list_vo}</span>
+															</if>																			
+														</foreach>
+													</dd>											
+												<dt>清晰度：</dt>
+													<dd>
+														<foreach name="arrList['is_hdList']" item="list_vo" key="list_key">													
+															<if condition="$videoList.is_hd eq $list_key "> 
+																<span class="">{$list_vo}</span>
+															</if>																			
+														</foreach>
+													</dd>
+												<dt>资源大小：</dt>
+													<dd>{$videoList.size}</dd>
+												<dt>浏览次数：</dt>
+													<dd>{$videoList.view}次</dd>
+											</dl>
+										</div>
+										
+										<!-- 资源信息详情左侧信息 -->
+										<div class="col-sm-7" id="cluster_info">
+											<dl class="dl-horizontal">
+												
+												<dt>导演：</dt>
+													<dd>{$videoList.director}</dd>	
+												<dt>主演：</dt>
+													<dd>
+														<foreach name="videoList.casts" item="vo">
+															<a href="###" class="text-navy m-r-sm">{$vo}</a>
+														</foreach>
+													</dd>
+												<dt>类型：</dt>
+													<dd>
+														<foreach name="arrList['kindList']" item="list_vo" key="list_key">													
+															<foreach name="videoList.kind" item="vo" key="key">
+																<if condition="$vo eq $list_key "> 
+																	<span class="label label-primary m-r-sm">{$list_vo}</span>
+																</if>
+															</foreach>																				
+														</foreach>
+													</dd>
+												<dt>最后更新：</dt>
+													<dd>{$videoList.lastdate|date="Y年 m月d日 H:i",###}</dd>
+												<dt>创建时间：</dt>
+													<dd>{$videoList.regdate|date="Y年 m月d日 H:i",###}</dd>
+												<dt>最近关注：</dt>
+												<dd class="project-people">
+													<a href="project_detail.html">
+														<img alt="image" class="img-circle" src="__PUBLIC__/img/a3.jpg">
+													</a>
+													<a href="project_detail.html">
+														<img alt="image" class="img-circle" src="__PUBLIC__/img/a1.jpg">
+													</a>
+													<a href="project_detail.html">
+														<img alt="image" class="img-circle" src="__PUBLIC__/img/a2.jpg">
+													</a>
+													<a href="project_detail.html">
+														<img alt="image" class="img-circle" src="__PUBLIC__/img/a4.jpg">
+													</a>
+													<a href="project_detail.html">
+														<img alt="image" class="img-circle" src="__PUBLIC__/img/a5.jpg">
+													</a>
+												</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							
+							</div>
+							
+							<!-- 资源详情信息内容开始 -->
+							<div class="row video-info-content">
+							
+								<div class="col-sm-12">
+									
+									<div class="social-feed-box">
+										<!-- <div class="social-avatar">
+											<a href="" class="pull-left">
+												<img alt="image" src="__PUBLIC__/img/a2.jpg">
+											</a>
+											<div class="media-body">
+												<a href="#">{$video.user}</a>
+												<small class="text-muted">{$video.lastdate|date="Y年 m月d日 H:i",###}</small>
+											</div>
+										</div>-->
+										
+										<div class="social-body">
+											<div class="feed-element">
+												<h3 class="ibox-title-bar pull-left">剧情简介：</h3>
+												<div class="media-body ">
+													<p>{$videoList.plot}</p>										
+												</div>
+											</div>
+											
+											<div class="feed-element">
+												<h3 class="ibox-title-bar pull-left">影片截图：</h3>
+												<div class="media-body ">
+													<div class="photos">
+														<img alt="image" src="__PUBLIC__/images/shotcuts/{$videoList.shotcuts}" class="img-responsive">
+													</div>
+												</div>
+											</div>
+		
+										</div>
+										
+										<!-- 底部评论 -->
+										<div class="social-footer">
+											<!-- 切换选项卡 -->
+											<div class="tabs-container">
+												<!-- 选项卡菜单 -->
+												<ul class="nav nav-tabs">
+													<li class="active"><a data-toggle="tab" href="#tab-comment" aria-expanded="true"> 精彩点评</a>
+													</li>
+													<li class=""><a data-toggle="tab" href="#tab-suggest" aria-expanded="false">相似资源</a>
+													</li>
+												</ul>
+												<!-- 选项盒子 -->
+												<div class="tab-content">
+													<div id="tab-comment" class="tab-pane active">
+														<div class="panel-body">
+															<!-- 评论列表 -->
+															<div class="social-comment-list">
+															
+																<!-- 评论列表项 -->
+																<foreach name="comList" item="vo">
+																	<div class="social-comment">
+																		<a href="" class="pull-left">
+																			<img alt="image" class="img-circle" src="__PUBLIC__/img/a1.jpg">
+																		</a>
+																		<div class="media-body">
+																			<a href="#" class="text-info">{$vo.username}</a> 
+																			<p>{$vo.content}</p>
+																			<p>
+																				<span class="small"><i class="fa fa-thumbs-up"></i> {$vo.like_sum}</span>
+																				<small class="text-muted">{$vo.add_time|date="Y年m月d日 H:i",###}</small>
+																			</p>
+																			<div class="actions">
+																				<a class="btn btn-xs btn-info"><i class="fa fa-thumbs-up"></i> 赞 </a>
+																				<a class="btn btn-xs btn-primary"><i class="fa fa-pencil"></i> 回复</a>
+																			</div>
+																			
+																		</div>
+																	</div>
+																</foreach>
+																
+																<!-- 发表评论 -->
+																<if condition="$Think.session.username neq '' ">
+																	<div class="social-comment add-comment">
+																		<a href="" class="pull-left">
+																			<img class="img-circle" alt="image" src="__PUBLIC__/img/a3.jpg">
+																		</a>
+																		<form id="commentForm" method="post" action="/Comment/addComment" role="form">
+																			<!-- 隐藏用户ID信息 -->
+																			<div class="user-comment-id">
+																				<input type="hidden" name="uid" value="{$Think.session.uid}" />
+																				<input type="hidden" name="reference_vid" value="{$videoList.vid}" />
+																				<input type="hidden" name="type" value="3" />
+																			</div>
+																			
+																			<div class="media-body">
+																				<textarea class="form-control" name="content" maxlength="30" placeholder="填写评论..."></textarea>
+																			</div>
+																			
+																			<div class="text-right btn-above">
+																				<button type="button" class="btn btn-xs btn-primary book-btn"><strong>发表</strong>
+																				</button>
+																			</div>
+																		</form>
+																	</div>
+																</if>
+																
+															</div>
+														</div>
+													</div>
+													
+													<div id="tab-suggest" class="tab-pane">
+														<div class="panel-body">
+															<strong>哇哦，页面不存在！</strong>
+															<p>此功能尚未完善，尽请期待！</p>
+														</div>
+													</div>
+												</div>
+											</div>			
+										</div>
+										<!-- 底部评论结束 -->
+		
+									</div>
+									
+								</div>
+							</div>
+							<!-- 资源详情信息内容结束 -->
+							
+						</div>
+		
+		            </div>
+		
+		        </div>
+				<!-- 右侧资源信息结束 -->
+		    </div>
+			<!--页面内容结束-->
+			</block>
+			
+			<block name="page-js">
+			<script>	
+				$(function(){
+					$(".book-btn").on("click",function(){
+						var val = $("#commentForm textarea").val();
+						if( isNull(val) ){
+							//正上方
+							layer.msg("当前评论内容不能为空！", {
+								offset: ['220px', '45%'],
+								shift: 6
+							});
+							return;
+						}
+						
+						var params=$("#commentForm").serialize();
+						var url = "/Comment/addComment";
+						$.post(url,params,function( msg ) {
+							
+							if(msg.info == 'ok'){
+								//登录后跳到登录页面，否则直接进入首页
+								layer.msg("评论成功，正在加载...", {icon: 16});
+								setTimeout(function(){
+								// window.location.href = msg.callback;
+									window.location.reload(); // 评论成功，刷新当前页面
+								}, 2000);
+							}else {
+								//正上方
+								layer.msg(msg.info, {
+									offset: ['220px', '45%'],
+									shift: 6
+								});
+							}
+						});
+					});
+				});
+			</script>	
+			</block>

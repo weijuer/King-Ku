@@ -64,6 +64,13 @@
 						
 					}
 					
+					// 样式格式化
+					function cellStyle(value, row, index) {
+					  	return {
+					    	classes: 'mui-ellipsis-2'
+					  	};
+					}
+					
 					// 海报截图转换
 					function posterFormatter(value, row, index) {
 						return '<img id="poster" class="img-round img-view-sm" src="__PUBLIC__/images/poster/'+row.poster+'" />';
@@ -367,7 +374,8 @@
 						}, {
 							field: 'plot',
 							title: '剧情简介',
-							width:  '20%',
+							width:  200,
+							cellStyle: cellStyle,
 							align: 'center',
 							valign: 'middle'
 						}, {

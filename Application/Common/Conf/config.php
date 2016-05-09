@@ -14,7 +14,7 @@ return array(
 //	'TMPL_ACTION_ERROR' => 'Public:404',
 
 	
-	'SHOW_PAGE_TRACE' => true, // 显示页面Trace信息
+//	'SHOW_PAGE_TRACE' => true, // 显示页面Trace信息
 	
 //	'SHOW_ERROR_MSG'  =>  true,    // 显示错误信息
 	

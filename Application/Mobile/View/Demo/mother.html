@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>母亲节</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="/Public/css/animate.min.css" />
+		<link rel="stylesheet" href="/Public/demo/css/swiper.min.css">
+		<link rel="stylesheet" href="/Public/demo/css/mother.css" />
+	</head>
+
+	<body>
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide-1">
+					<div class="wj-slide-body">
+						<p class="animated bounceInDown">母爱无言，如海一样宽阔；母爱无声，却滋润每个人的心灵。平凡而简单的母爱却带给我们无限的快乐和幸福。 世界上最温暖的语言，是母亲的呼唤；世界上最善良的心，是母亲的心。世界因为有了母亲，才这样和谐和温暖。</p>
+					</div>
+				</div>
+				<div class="swiper-slide slide-2">
+					<div class="wj-slide-body">
+						<p class="animated bounceInLeft">时间会老，岁月会流逝，但母亲的爱，却永远不会褪色和凋谢。</p>
+						<p class="animated bounceInRight">母亲用无私的爱，宽容的心，包容着每个孩子。教育自己的孩子做个好人，做个真诚的人，做个有爱心的人，做个有用的人</p>
+					</div>
+				</div>
+				<div class="swiper-slide slide-3">
+					<div class="wj-slide-body">
+						<p class="animated rotateInDownLeft">母亲是世界上最伟大的女人，用自己无私的爱，最真实的情，把温暖，把希望，把爱心，把善良都传给自己的孩子。</p>
+						<p class="animated rotateInDownRight">母亲对自己的孩子是用力尽心的，也是最辛劳的，为了孩子的幸福任劳任怨。母亲最大的希望就是孩子们有自己的事业，自己的人生，自己的家庭，自己的幸福。</p>
+					</div>
+				</div>
+				<div class="swiper-slide slide-4">
+					<div class="wj-slide-body">
+						<p class="animated fadeInLeft">母亲，当我们一次次呼唤你的时候，心里是激动的，是充满真情的。你为我们辛劳一生，付出一生，却从不说半点怨言。</p>
+						<p class="animated fadeInRight">因为母爱，世界变得不再冰凉；因为母爱，世界变得和谐美满；因为母爱，我们的生活才能这样多姿多彩。</p>
+					</div>
+				</div>
+				<div class="swiper-slide slide-5">
+					<div class="wj-slide-body">
+						<p class="animated zoomIn">母爱照耀着我们的心灵；母爱滋养着我们的心田；在这个难忘的母亲节，让我们把最真诚的祝福，最真诚的心，最真实的爱，最体贴的关怀送给我们亲爱的母亲，祝福她们节日快乐！永远健康平安！幸福快乐！</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-pagination"></div>
+		</div>
+		<span class="music play"><audio id="audio" src="/Public/demo/music/FadeAway.mp3" autoplay="autoplay" loop="loop"></audio></span>
+		<div class="arrow"></div>
+		<script src="/Public/demo/js/swiper.min.js"></script>
+		<script type="text/javascript" src="/Public/js/jquery.min.js" ></script>
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				paginationClickable: true,
+//				effect:'coverflow',
+				direction: 'vertical'
+			});
+
+            $('.music').on('click',function(){
+                $(this).toggleClass('play');
+                var audio = document.getElementById('audio');
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+		</script>
+	</body>
+
+</html>

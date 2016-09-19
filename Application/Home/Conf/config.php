@@ -10,6 +10,7 @@ return array(
 		'videoDetail/:vid\d'  => 'Video/videoDetail',
 		'videoList'  => 'Video/videoList',
 		'movieList'  => 'Video/movieList',
+		'movieList2'  => 'Video/movieList2',
 	),
 	
 	

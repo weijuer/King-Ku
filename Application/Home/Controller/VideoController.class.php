@@ -118,6 +118,60 @@ class VideoController extends HomeController {
 		$data = $Videos->where()->order('regdate desc')->select();
 		$this->ajaxReturn($data,'json');
 	}
+	
+	//读取电影列表数据2
+	public function movieList2() {
+		
+		//检索
+/*		if (isset($_POST['search']) && !empty($_POST['search'])) {
+		    foreach ($_SESSION['emulate_data'] as $key => $row) {
+		        if (strpos($row['name'], $_POST['search']) !== false 
+		        || strpos($row['age'], $_POST['search']) !== false) {
+		            $list_temp[] = $_SESSION['emulate_data'][$key];
+		        }
+		    }
+		} else {
+		    $list_temp = $_SESSION['emulate_data'];
+		}
+		
+		//排序
+		if (isset($_POST['sort'])) {
+		    $temp = [];
+		    foreach ($list_temp as $row) {
+		        $temp[] = $row[$_POST['sort']];
+		    }
+		    //php的多维排序
+		    array_multisort($temp,
+		        $_POST['sort'] == 'name' ? SORT_STRING : SORT_NUMERIC,
+		        $_POST['order'] == 'asc' ? SORT_ASC : SORT_DESC,
+		        $list_temp
+		    );
+		}*/
+		
+		$pageSize = I('get.pageSize');
+		$pageIndex = I('get.pageIndex');
+		$order = I('get.order');
+		
+		// 实例化Videos对象
+		$Videos   =   M('Videos'); 
+		
+		// 定义查询条件
+		$condition['order'] = I('get.order','desc');
+		$count = $Videos->where($condition)->count();
+		$p = getpage($count, $pageSize);
+		// $Page  = new \Think\Page($count, $pageSize); // 实例化分页类 传入总记录数和每页显示的记录数
+		
+		//分页时需要获取记录总数，键值为 total
+		$data["total"] = $count;
+		// 读取数据		
+		$data['rows'] = $Videos->where()->order('regdate desc')->limit($pageIndex.','.$p->listRows)->select();
+		// $data['rows'] = $Videos->where()->order('regdate desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+		// $data['rows'] = $Videos->where()->order('regdate desc')->limit('0,5')->select();
+		$data['info'] = $pageIndex.','.$p->listRows;
+		
+		// $this->assign('page', $p->show()); // 赋值分页输出
+		$this->ajaxReturn($data, 'json');
+	}
 
 	
 	// 单条电影数据

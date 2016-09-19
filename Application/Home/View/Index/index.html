@@ -118,6 +118,15 @@
 				$remove = $('#remove'),
 				selections = [];
 			
+			//传递的参数
+			function queryParams(params) {					 
+				return {					 
+					pageSize: params.limit,					 
+					pageIndex: params.offset,
+					order: params.order					 
+				};					 
+			}
+			
 			// 时间格式化
 			function regDateFormatter(value, row, index) {
 
@@ -247,24 +256,27 @@
 			}
 			
 			// 请求数据地址
-			var queryUrl = '/movieList' + '?rnd=' + +Math.random(); // 请求URL	
+			var queryUrl = '/movieList2' + '?rnd=' + Math.random(); // 请求URL	
 			
 			// 表格初始化 
 			$table.bootstrapTable({
 				//height: getHeight(),
 				method:'get',
 				url: queryUrl,
-				cache:false,
+				dataField: "rows",//服务端返回数据键值 就是说记录放的键值是rows，分页时使用总记录数的键值为total
+				// cache:false,
 				//height:300,
 				// toolbar:'#toolbar',
 				striped:true,
 				pagination:true,
-				//sidePagination:'client',
-				// pageNumber:1, //默认显示第几页数据
+				sidePagination:'server',
+				pageNumber:1, //默认显示第几页数据
 				pageSize:5,
 				pageList:[10,20,30],
 				search:true,
-				// sortOrder:'desc',
+				sortOrder: "asc",     //排序方式
+			   	queryParams: queryParams,//传递参数（*）
+			   	dataType: "json",//期待返回数据类型
 				// showColumns:true,
 				// showToggle:true,
 				showRefresh:true,
@@ -336,19 +348,6 @@
 				}]	
 			});
 			
-			//传递的参数
-			function queryParams(params) {					 
-				return {					 
-					pageSize: params.pageSize,					 
-					pageIndex: params.pageNumber,					 
-					UserName: $("#txtName").val(),					 
-					Birthday: $("#txtBirthday").val(),					 
-					Gender: $("#Gender").val(),					 
-					Address: $("#txtAddress").val(),					 
-					name: params.sortName,					 
-					order: params.sortOrder					 
-				};					 
-			}
 			
 		});
 	</script>
